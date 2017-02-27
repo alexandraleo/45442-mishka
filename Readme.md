@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александра Леонова](https://up.htmlacademy.ru/adaptive/10/user/45442).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Козлов](https://htmlacademy.ru/profile/id27386).
 
 ---
 
