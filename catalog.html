@@ -7,33 +7,37 @@
   <body>
   <header class="page-header">
     <nav class="main-nav page-header__nav">
-      <div class="logo"><img src="" alt="Мишка" width="200" height="100"></div>
-      <button class="main-nav__btn" type="button">Открыть меню</button>
+      <div class="logo"><a href="index.html"><img src="http://placehold.it/86x35" alt="Мишка" width="86" height="35"></a></div>
+      <button class="main-nav__btn" type="button">Меню</button>
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="">Ссылка1</a></li>
-        <li class="main-nav__item"><a href="">Ссылка2</a></li>
-        <li class="main-nav__item"><a href="">Ссылка3</a></li>
+        <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+        <li class="main-nav__item"><a href="order.html">Вязание на заказ</a></li>
+        <li class="main-nav__item">
+          <label for="page-search" class="main-nav__search-label main-nav__search-label--hidden">Поиск по сайту</label>
+          <input type="search" id="page-search" class="main-nav__search" placeholder="Поиск по сайту"></li>
+        <li class="main-nav__item"><a href="">Корзина: пока пуста</a></li>
       </ul>
     </nav>
     <h1 class="page-header__header">Каталог товаров</h1>
   </header>
   <main class="page-main">
     <section class="catalog">
+      <h2 class="catalog__heading catalog__heading-hidden">Каталог товаров</h2>
       <article class="catalog__item">
-        <div class="catalog__item-image"><img src="" alt="Игрушка Зайчик-попрыгайчик" width="250" height="150"></div>
-        <h2 class="catalog__item-title">Зайчик-попрыгайчик</h2>
+        <div class="catalog__item-image"><a href="#"><img src="http://placehold.it/260x195" alt="Игрушка Зайчик-попрыгайчик" width="260" height="195"></a></div>
+        <h2 class="catalog__item-title"><a href="#">Зайчик-попрыгайчик</a></h2>
         <p class="catalog__desc">Роста 30 см, вес 200 г</p>
         <a href=""><span class="catalog__item-price">1200 руб.</span></a>
       </article>
       <article class="catalog__item">
-        <div class="catalog__item-image"><img src="" alt="Корзинка для белья" width="250" height="150"></div>
-        <h2 class="catalog__item-title">Корзинка для белья</h2>
+        <div class="catalog__item-image"><a href="#"><img src="http://placehold.it/260x195" alt="Корзинка для белья" width="260" height="195"></a></div>
+        <h2 class="catalog__item-title"><a href="#">Корзинка для белья</a></h2>
         <p class="catalog__desc">Диаметр 15 см, высота 10 см</p>
         <a href=""><span class="catalog__item-price">690 руб.</span></a>
       </article>
       <article class="catalog__item">
-        <div class="catalog__item-image"><img src="" alt="Большая корзинка для игрушек" width="250" height="150"></div>
-        <h2 class="catalog__item-title">Большая корзинка для игрушек</h2>
+        <div class="catalog__item-image"><a href="#"><img src="http://placehold.it/260x195" alt="Большая корзинка для игрушек" width="260" height="195"></a></div>
+        <h2 class="catalog__item-title"><a href="#">Большая корзинка для игрушек</a></h2>
         <p class="catalog__desc">Диаметр 30 см, высота 30 см</p>
         <a href=""><span class="catalog__item-price">1500 руб.</span></a>
       </article>
@@ -41,10 +45,20 @@
     <section class="video-review">
       <h2 class="video-review__header">Процесс производства</h2>
       <figure class="video-review__wrap">
-        <video src="" width="300" height="200" poster=""></video>
+        <video src="http://placehold.it/260x150" width="260" height="150" poster="http://placehold.it/260x150"></video>
         <figcaption class="video-review_descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</figcaption>
       </figure>
       <a href="" class="btn">Сделать заказ</a>
+    </section>
+    <section class="modal-window">
+      <h2 class="modal-window__header">Добавить в корзину</h2>
+      <p class="modal-window__descr">Выберите размер:</p>
+      <ul class="modal-window__list">
+        <li class="modal-window_option"><a href="">S</a></li>
+        <li class="modal-window_option"><a href="">M</a></li>
+        <li class="modal-window_option"><a href="">L</a></li>
+      </ul>
+      <a class="modal-window__btn">Добавить</a>
     </section>
   </main>
   <footer class="page-footer">

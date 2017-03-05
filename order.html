@@ -7,12 +7,15 @@
   <body>
   <header class="page-header">
     <nav class="main-nav page-header__nav">
-      <div class="logo"><img src="" alt="Мишка" width="200" height="100"></div>
-      <button class="main-nav__btn" type="button">Открыть меню</button>
+      <div class="logo"><a href="index.html"><img src="http://placehold.it/86x35" alt="Мишка" width="86" height="35"></a></div>
+      <button class="main-nav__btn" type="button">Меню</button>
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="">Ссылка1</a></li>
-        <li class="main-nav__item"><a href="">Ссылка2</a></li>
-        <li class="main-nav__item"><a href="">Ссылка3</a></li>
+        <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+        <li class="main-nav__item"><a href="order.html">Вязание на заказ</a></li>
+        <li class="main-nav__item">
+          <label for="page-search" class="main-nav__search-label main-nav__search-label--hidden">Поиск по сайту</label>
+          <input type="search" id="page-search" class="main-nav__search" placeholder="Поиск по сайту"></li>
+        <li class="main-nav__item"><a href="">Корзина: пока пуста</a></li>
       </ul>
     </nav>
     <h1 class="page-header__header">Вязание на заказ</h1>
@@ -38,7 +41,7 @@
       <input type="checkbox" id="checkbox-4" class="order-form__option" name="order-color" value="black">
       <label for="checkbox-4" class="order-form__option-label">Черный</label>
       <input type="checkbox" id="checkbox-5" class="order-form__option" name="order-color" value="pink">
-      <label for="checkbox-5" class="order-form__option-label">Розовыый</label>
+      <label for="checkbox-5" class="order-form__option-label">Розовый</label>
       <input type="checkbox" id="checkbox-6" class="order-form__option" name="order-color" value="orange">
       <label for="checkbox-6" class="order-form__option-label">Оранжевый</label>
     </fieldset>
@@ -59,7 +62,7 @@
       <fieldset class="order-form__order-group">
         <legend class="order-form__group-name">E-mail</legend>
         <label for="mail" class="order-form__option-label order-form__option-label--hidden">Электронная почта</label>
-        <input type="email" class="order-form__option" placeholder="Ваш email*" name="email" required>
+        <input type="email" class="order-form__option" id="mail" placeholder="Ваш email*" name="email" required>
       </fieldset>
       <fieldset class="order-form__order-group">
         <legend class="order-form__group-name">Доп</legend>
