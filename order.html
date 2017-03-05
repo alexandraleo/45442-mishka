@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+  <header class="page-header">
+    <nav class="main-nav page-header__nav">
+      <div class="logo"><img src="" alt="Мишка" width="200" height="100"></div>
+      <button class="main-nav__btn" type="button">Открыть меню</button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="">Ссылка1</a></li>
+        <li class="main-nav__item"><a href="">Ссылка2</a></li>
+        <li class="main-nav__item"><a href="">Ссылка3</a></li>
+      </ul>
+    </nav>
+    <h1 class="page-header__header">Вязание на заказ</h1>
+  </header>
+  <main class="page-main">
+    <p class="page-main__descr">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказы и мы свяжемся с вами, чтобы уточнить детали.</p>
+    <form action="https://echo.htmlacademy.ru/" class="order-form page-main__order-form">
+      <fieldset class="order-form__order-group">
+        <legend class="order-form__group-name">Тип</legend>
+        <input type="radio" id="radio-1" class="page-main__option" name="order-type" checked>
+        <label for="radio-1" class="order-form__option-label">Аксессуар для интерьера</label>
+        <input type="radio" id="radio-2" class="page-main__option" name="order-type">
+        <label for="radio-2" class="order-form__option-label">Детская игрушка</label>
+      </fieldset>
+      <fieldset class="order-form__order-group"><legend class="order-form__group-name"></legend>
+      (label[for="radio-$" class="order-form__option-label"]+input[type="radio" id="radio-$" class="page-main__option" name="order-type"])*2
+    </fieldset>
+      <fieldset class="order-form__order-group"><legend class="order-form__group-name"></legend></fieldset>
+      <fieldset class="order-form__order-group"><legend class="order-form__group-name"></legend></fieldset>
+      <fieldset class="order-form__order-group"><legend class="order-form__group-name"></legend></fieldset>
+      <fieldset class="order-form__order-group"><legend class="order-form__group-name"></legend></fieldset>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <ul class="socials page-footer__socials">
+      <li class="socials__link"><a href="">Инстаграм</a></li>
+      <li class="socials__link"><a href="">Фейсбук</a></li>
+      <li class="socials__link"><a href="">Твиттер</a></li>
+    </ul>
+    <div class="page-footer__developer">
+      <span class="page-footer__developer-text">Разработано</span>
+      <a href="" class="page-footer__developer-link">HTML Academy</a></div>
+  </footer>
+  </body>
+</html>
