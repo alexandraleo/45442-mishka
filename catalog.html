@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML&nbsp;Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page">
   <header class="page-header">
     <nav class="main-nav page-header__nav  main-nav--no-js">
       <div class="logo">
@@ -14,16 +15,16 @@
       </div>
       <button class="main-nav__btn" type="button">Меню</button>
       <ul class="main-nav__items-list">
-        <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-        <li class="main-nav__item"><a href="order.html">Вязание на&nbsp;заказ</a></li>
+        <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог товаров</a></li>
+        <li class="main-nav__item"><a href="order.html" class="main-nav__link">Вязание на&nbsp;заказ</a></li>
       </ul>
-      <ul class="main-nav__purchase-list">
+      <ul class="main-nav__items-list main-nav__purchase-list">
         <li class="main-nav__item">
           <label class="main-nav__search-label main-nav__search-label--hidden" for="page-search">Поиск по&nbsp;сайту</label>
           <input class="main-nav__search main-nav__item-icon main-nav__item-icon--icon-1" type="search" id="page-search" placeholder="Поиск по сайту">
         </li>
         <li class="main-nav__item">
-          <a href="#" class="main-nav__item-icon main-nav__item-icon--icon-2">Корзина: пока пуста</a>
+          <a href="#" class="main-nav__link main-nav__item-icon main-nav__item-icon--icon-2">Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
