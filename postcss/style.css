@@ -1,5 +1,6 @@
 body { background: blue; }
 @import "variables.css";
+@import "mixins.css";
 
 @import "blocks/page.css";
 @import "blocks/page-header.css";

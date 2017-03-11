@@ -1,11 +1,5 @@
 .special-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  font-family: $font;
-  padding: 33px 30px;
-  background-color: #fff;
+  @mixin block;
 }
 .special-item__title {
   font-size: 25px;

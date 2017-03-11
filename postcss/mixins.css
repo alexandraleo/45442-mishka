@@ -1,0 +1,10 @@
+@define-mixin block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #fff;
+  color: #000;
+  padding: 33px 30px;
+  font-family: $font;
+}
