@@ -1,0 +1,17 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #fff;
+  color: #000;
+  padding: 33px 30px;
+  font-family: $font;
+}
+.reviews__header {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000;
+  font-weight: bold;
+}

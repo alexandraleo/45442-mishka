@@ -8,3 +8,4 @@ body { background: blue; }
 @import "blocks/special-item.css";
 @import "blocks/btn.css";
 @import "blocks/advantages.css";
+@import "blocks/reviews.css";
