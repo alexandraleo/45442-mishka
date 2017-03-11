@@ -1,4 +1,3 @@
-body { background: blue; }
 @import "variables.css";
 @import "mixins.css";
 
@@ -11,3 +10,4 @@ body { background: blue; }
 @import "blocks/advantages.css";
 @import "blocks/reviews.css";
 @import "blocks/contacts.css";
+@import "blocks/page-footer.css";
