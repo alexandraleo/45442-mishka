@@ -14,3 +14,5 @@ body {background-color: blue;}
 @import "blocks/page-footer.css";
 @import "blocks/socials.css";
 @import "blocks/modal-window.css";
+@import "blocks/catalog.css";
+@import "blocks/product.css";
