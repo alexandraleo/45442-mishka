@@ -3,6 +3,7 @@
   background-color: $body-bg;
 }
 .page-header__title {
+  margin: 0;
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;

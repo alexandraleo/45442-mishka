@@ -5,3 +5,6 @@ body { background: blue; }
 @import "blocks/page-header.css";
 @import "blocks/main-nav.css";
 @import "blocks/sub-menu.css";
+@import "blocks/special-item.css";
+@import "blocks/btn.css";
+@import "blocks/advantages.css";
