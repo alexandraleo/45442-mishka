@@ -1,0 +1,44 @@
+.video-review {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #fff;
+  color: #000;
+  padding: 0 30px;
+  font-family: $font;
+}
+.video-review__wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid $bd-color;
+  padding: 30px 0;
+}
+.video-review__header {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+  padding-left: 90px;
+  padding-bottom: 25px;
+}
+.video-review__wrap {
+  margin: 0;
+  padding-left: 34px;
+  padding-right: 34px;
+  padding-top: 34px;
+}
+.video-review__desc {
+  font-size: 13px;
+  line-height: 24px;
+  color: $txt-color;
+  padding: 33px 34px 30px;
+}
+.video-review__btn {
+  width: 192px;
+  align-self: center;
+}

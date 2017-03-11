@@ -1,0 +1,10 @@
+.page-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  background-color: #fff;
+  color: #000;
+  font-family: $font;
+  padding-bottom: 55px;
+}

@@ -5,7 +5,7 @@
   align-items: stretch;
   font-family: $font;
   padding-bottom: 30px;
-  border-bottom: 1px solid $bd-color;
+  border: 1px solid $bd-color;
 }
 .product__item-info {
   display: flex;
