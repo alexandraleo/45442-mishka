@@ -1,0 +1,34 @@
+.contacts {
+  @mixin block;
+}
+.contacts__header {
+  margin: 0;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000;
+  font-weight: bold;
+}
+.contacts__address {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 30px;
+  color: $txt-color;
+  font-style: normal;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.contacts__type {
+  display: inline-flex;
+  width: 77px;
+}
+.contacts__text {
+  width: calc(100% - 77px);
+}
+.contacts__map {
+  align-self: center;
+  margin-bottom: 39px;
+}

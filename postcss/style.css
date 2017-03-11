@@ -10,3 +10,4 @@ body { background: blue; }
 @import "blocks/btn.css";
 @import "blocks/advantages.css";
 @import "blocks/reviews.css";
+@import "blocks/contacts.css";
