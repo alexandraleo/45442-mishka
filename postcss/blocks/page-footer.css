@@ -11,6 +11,7 @@
 }
 .page-footer__socials {
   width: 100%;
+  min-height: 80px;
 }
 .page-footer__developer {
   display: flex;
