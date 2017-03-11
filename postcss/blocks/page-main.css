@@ -8,3 +8,13 @@
   font-family: $font;
   padding-bottom: 55px;
 }
+.page-main__desc {
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 24px;
+  color: $txt-color;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0;
+  padding-top: 30px;
+}

@@ -18,3 +18,4 @@ body {background-color: blue;}
 @import "blocks/catalog.css";
 @import "blocks/product.css";
 @import "blocks/video-review.css";
+@import "blocks/form.css";
