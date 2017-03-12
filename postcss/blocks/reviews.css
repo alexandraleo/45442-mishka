@@ -14,11 +14,8 @@
   line-height: 2;
   color: $txt-color;
   margin: 0;
-  padding-top: 33px;
-  padding-bottom: 35px;
-}
-.review__blockquote p {
-  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .review__cite {
   font-family: inherit;

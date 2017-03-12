@@ -4,14 +4,12 @@
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 0;
+  @mixin reset-list;
 }
 .socials__item {
   display: flex;
   justify-content: center;
   align-items: center;
-  list-style: none;
   width: 30px;
   height: 30px;
   padding: 0 15px;

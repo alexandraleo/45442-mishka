@@ -4,11 +4,7 @@
   font-size: 19px;
   line-height: 1.26;
   color: #ffffff;
-  margin: 0;
-  padding: 0;
-}
-.sub-menu__item {
-  list-style: none;
+  @mixin reset-list;
 }
 .sub-menu__item-link {
   display: block;
