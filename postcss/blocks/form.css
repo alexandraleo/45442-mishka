@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   border: none;
-  border-top: 1px solid $light-green;
+  border-top: 1px solid $green-light;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -18,7 +18,7 @@
   font-family: inherit;
   font-size: 17px;
   line-height: 1;
-  color: $light-green;
+  color: $green-light;
   text-transform: uppercase;
   font-weight: bold;
   margin-left: 0;
