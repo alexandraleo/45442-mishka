@@ -6,18 +6,20 @@
   color: #ffffff;
   @mixin reset-list;
 }
+.sub-menu__item {
+  background-color: $green-light;
+}
 .sub-menu__item-link {
   display: block;
   text-decoration: none;
   font-size: inherit;
   color: inherit;
   font-weight: inherit;
-  padding-right: 130px;
+  padding-right: 140px;
   padding-left: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: $green-light;
 }
-.sub-menu__item-link--toy {
+.sub-menu__item:nth-child(2n) {
   background-color: $green-dark;
 }
