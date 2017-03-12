@@ -1,11 +1,11 @@
 .page-header {
-  font-family: $font;
+  font-family: inherit;
   background-color: $body-bg;
 }
 .page-header__title {
   margin: 0;
   font-size: 27px;
-  line-height: 30px;
+  line-height: 1.1;
   font-weight: bold;
   background-color: $grey;
   padding-top: 75px;

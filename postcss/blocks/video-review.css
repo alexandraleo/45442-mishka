@@ -9,7 +9,7 @@
   padding-bottom: 33px;
   background-color: #fff;
   color: #000;
-  font-family: $font;
+  font-family: inherit;
   border: 1px solid $bd-color;
 }
 .video-review__wrapper {
@@ -22,7 +22,7 @@
 }
 .video-review__header {
   font-size: 17px;
-  line-height: 24px;
+  line-height: 1.4;
   font-weight: bold;
   color: #000;
   margin: 0;
@@ -31,7 +31,7 @@
 }
 .video-review__desc {
   font-size: 13px;
-  line-height: 24px;
+  line-height: 1.85;
   color: $txt-color;
   padding: 33px 34px 30px;
 }

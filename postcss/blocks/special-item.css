@@ -3,16 +3,16 @@
 }
 .special-item__title {
   font-size: 25px;
-  line-height: 30px;
+  line-height: 1.2;
   color: #000000;
   margin: 0;
   padding: 0;
 }
 .special-item__subheader {
   font-family: inherit;
-  color: $light-green;
+  color: $green-light;
   font-size: 17px;
-  line-height: 20px;
+  line-height: 1.18;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -20,7 +20,7 @@
   font-family: inherit;
   color: $txt-color;
   font-size: 15px;
-  line-height: 24px;
+  line-height: 1.;
   font-weight: normal;
   padding-top: 30px;
   padding-bottom: 10px;
@@ -28,9 +28,9 @@
 }
 .special-item__info {
   width: 100%;
-  font-family: $font;
+  font-family: inherit;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 1.3;
   color: $txt-color;
   margin-top: 10px;
   margin-bottom: 30px;
@@ -49,9 +49,9 @@
   align-self: center;
   margin-top: 30px;
   margin-bottom: 30px;
-  font-family: $font;
+  font-family: inherit;
   font-size: 17px;
-  line-height: 24px;
+  line-height: 1.4;
   color: $txt-color;
   font-weight: bold;
 }

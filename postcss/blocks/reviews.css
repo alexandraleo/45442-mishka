@@ -4,14 +4,14 @@
 .reviews__header {
   margin: 0;
   font-size: 25px;
-  line-height: 30px;
+  line-height: 1.2;
   color: #000;
   font-weight: bold;
 }
 .review__blockquote {
   font-family: inherit;
   font-size: 15px;
-  line-height: 30px;
+  line-height: 2;
   color: $txt-color;
   margin: 0;
   padding-top: 33px;
@@ -23,13 +23,13 @@
 .review__cite {
   font-family: inherit;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.3;
   font-style: normal;
   font-weight: bold;
 }
 .review__cite-address {
   font-size: 17px;
-  line-height: 30px;
+  line-height: 1.8;
   color: $txt-color;
   font-style: normal;
   text-decoration: none;

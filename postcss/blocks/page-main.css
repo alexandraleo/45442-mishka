@@ -5,13 +5,13 @@
   align-items: stretch;
   background-color: #fff;
   color: #000;
-  font-family: $font;
+  font-family: inherit;
   padding-bottom: 55px;
 }
 .page-main__desc {
   font-family: inherit;
   font-size: 13px;
-  line-height: 24px;
+  line-height: 1.85;
   color: $txt-color;
   padding-left: 30px;
   padding-right: 30px;

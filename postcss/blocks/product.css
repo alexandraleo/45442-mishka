@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  font-family: $font;
+  font-family: inherit;
   padding-bottom: 30px;
   border: 1px solid $bd-color;
 }
@@ -18,7 +18,7 @@
 }
 .product__item-title {
   font-size: 17px;
-  line-height: 24px;
+  line-height: 1.4;
   color: #000;
   font-weight: bold;
   margin: 0;
@@ -41,14 +41,14 @@
 }
 .product__desc {
   font-size: 13px;
-  line-height: 30px;
+  line-height: 2.3;
   color: $txt-color;
   padding-bottom: 20px;
   border-bottom: 1px solid $bd-color;
 }
 .product__item-price {
   font-size: 15px;
-  line-height: 24px;
+  line-height: 1.6;
   font-weight: bold;
   color: #000;
 }

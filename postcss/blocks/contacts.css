@@ -5,7 +5,7 @@
   margin: 0;
   font-family: inherit;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.7;
   color: #000;
   font-weight: bold;
 }
@@ -15,7 +15,7 @@
   flex-wrap: wrap;
   font-family: inherit;
   font-size: 15px;
-  line-height: 30px;
+  line-height: 2;
   color: $txt-color;
   font-style: normal;
   padding-top: 36px;

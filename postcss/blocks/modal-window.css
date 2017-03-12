@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  font-family: $font;
+  font-family: inherit;
   width: 320px;
   padding-top: 36px;
   padding-bottom: 46px;
@@ -17,7 +17,7 @@
   margin: 0;
   font-family: inherit;
   font-size: 25px;
-  line-height: 30px;
+  line-height: 1.2;
   color: #000;
   font-weight: bold;
   text-align: center;
@@ -25,7 +25,7 @@
 .modal-window__desc {
   font-family: inherit;
   font-size: 15px;
-  line-height: 30px;
+  line-height: 2;
   color: $txt-color;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -38,7 +38,7 @@
   background-color: $green-light;
   color: #fff;
   font-size: 17px;
-  line-height: 16px;
+  line-height: 1;
   font-weight: bold;
   text-transform: uppercase;
   padding-top: 18px;
