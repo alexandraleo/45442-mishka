@@ -1,4 +1,3 @@
-body {background-color: blue;}
 @import "variables.css";
 @import "mixins.css";
 
@@ -19,3 +18,4 @@ body {background-color: blue;}
 @import "blocks/product.css";
 @import "blocks/video-review.css";
 @import "blocks/form.css";
+@import "blocks/overlay.css";

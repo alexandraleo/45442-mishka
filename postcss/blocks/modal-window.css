@@ -1,18 +1,10 @@
 .modal-window {
-  /*position: fixed;*/
-  font-family: $font;
-}
-/*.modal-window__overlay {
-  padding-top: 50%;
-  width: 320px;
-  height: 100vh;
-  background-color: rgba(255, 255, 255, 0.9);
-}*/
-.modal-window__modal-content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: stretch;
+  font-family: $font;
+  width: 320px;
   padding-top: 36px;
   padding-bottom: 46px;
   padding-left: 30px;
@@ -43,7 +35,7 @@
 }
 .modal-window__btn {
   width: 100%;
-  background-color: $light-green;
+  background-color: $green-light;
   color: #fff;
   font-size: 17px;
   line-height: 16px;
