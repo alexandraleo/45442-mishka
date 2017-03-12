@@ -9,7 +9,7 @@
 
 <body class="page">
   <header class="page-header">
-    <nav class="main-nav page-header__nav  main-nav--no-js">
+    <nav class="main-nav  main-nav--no-js  page-header__nav">
       <div class="logo">
         <a href="index.html"><img src="http://placehold.it/86x35" alt="Магазин Мишка" width="86" height="35"></a>
       </div>
@@ -20,7 +20,7 @@
       </ul>
       <ul class="main-nav__items-list">
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__item-icon main-nav__item-icon--icon-search">Поиск по&nbsp;сайту</a>
+          <a href="#" class="main-nav__link main-nav__item-icon main-nav__item-icon--icon-search">Поиск по&nbsp;сайту</a>
         </li>
         <li class="main-nav__item">
           <a href="#" class="main-nav__link main-nav__item-icon main-nav__item-icon--icon-cart">Корзина: пока пуста</a>
@@ -38,8 +38,10 @@
           <div class="product__item-info">
             <h2 class="product__item-title"><a href="#" class="product__title-link">Зайчик-попрыгайчик</a></h2>
             <span class="product__desc">Рост 30&nbsp;см, вес 200&nbsp;г</span>
-            <span class="product__item-price">1200&nbsp;руб.</span>
-            <a href="#" class="product__basket-btn">Добавить в&nbsp;корзину</a>
+            <div class="product__item-buy">
+              <span class="product__item-price">1200&nbsp;руб.</span>
+              <a href="#" class="product__basket-btn">Добавить в&nbsp;корзину</a>
+            </div>
           </div>
         </article>
         <article class="product catalog__item">
@@ -47,8 +49,10 @@
           <div class="product__item-info">
             <h2 class="product__item-title"><a href="#" class="product__title-link">Корзинка для белья</a></h2>
             <span class="product__desc">Диаметр 15&nbsp;см, высота 10&nbsp;см</span>
-            <span class="product__item-price">690&nbsp;руб.</span>
-            <a href="#" class="product__basket-btn">Добавить в&nbsp;корзину</a>
+            <div class="product__item-buy">
+              <span class="product__item-price">690&nbsp;руб.</span>
+              <a href="#" class="product__basket-btn">Добавить в&nbsp;корзину</a>
+            </div>
           </div>
         </article>
         <article class="product catalog__item">
@@ -56,49 +60,48 @@
           <div class="product__item-info">
             <h2 class="product__item-title"><a href="#" class="product__title-link">Большая корзинка для игрушек</a></h2>
             <span class="product__desc">Диаметр 30&nbsp;см, высота 30&nbsp;см</span>
-            <span class="product__item-price">1500&nbsp;руб.</span>
-            <a href="#" class="product__basket-btn">Добавить в&nbsp;корзину</a>
+            <div class="product__item-buy">
+              <span class="product__item-price">1500&nbsp;руб.</span>
+              <a href="#" class="product__basket-btn">Добавить в&nbsp;корзину</a>
+            </div>
           </div>
         </article>
       </div>
     </section>
     <section class="video-review">
-      <div class="video-review__wrapper">
         <h2 class="video-review__header video-review__header--icon">Процесс производства</h2>
-          <video src="http://placehold.it/260x150" width="260" height="150" poster="img/video-mobile@1x.jpg"></video>
+          <div class="video-review__wrap">
+            <video src="http://placehold.it/260x150" width="260" height="150" poster="img/video-mobile@1x.jpg"></video>
+            <button class="video-review__play-btn" type="button">Воспроизвести</button>
+          </div>
           <span class="video-review__desc">По&nbsp;просьбам наших любимых фолловеров мы&nbsp;сняли для вас подробное видео о&nbsp;том, как появляются наши товары.</span>
-          <button class="video-review__play-btn" type="button">Воспроизвести</button>
           <a href="#" class="btn video-review__btn">Сделать заказ</a>
-      </div>
     </section>
   </main>
   <footer class="page-footer">
     <ul class="socials page-footer__socials">
-      <li class="socials__item"><a href="#" class="socials__link socials__link--icon-1">Инстаграм</a></li>
-      <li class="socials__item"><a href="#" class="socials__link socials__link--icon-2">Фейсбук</a></li>
-      <li class="socials__item"><a href="#" class="socials__link socials__link--icon-3">Твиттер</a></li>
+      <li class="socials__item"><a href="#" class="socials__link socials__link--icon-insta">Инстаграм</a></li>
+      <li class="socials__item"><a href="#" class="socials__link socials__link--icon-fb">Фейсбук</a></li>
+      <li class="socials__item"><a href="#" class="socials__link socials__link--icon-twitter">Твиттер</a></li>
     </ul>
     <div class="page-footer__developer">
       <span class="page-footer__developer-text">Разработано</span>
       <a href="#" class="page-footer__developer-link">HTML Academy</a>
     </div>
   </footer>
-  <section class="modal-window">
-    <div class="modal-window__overlay">
-      <div class="modal-window__modal-content">
-        <h2 class="modal-window__header">Добавить в&nbsp;корзину</h2>
-        <span class="modal-window__desc">Выберите размер:</span>
-        <form action="https://echo.htmlacademy.ru/" class="modal-window__form">
-          <input type="radio" class="modal-window__option" name="size" id="size-1" value="size-S" checked>
-          <label for="size-1" class="modal-window__label">S</label>
-          <input type="radio" class="modal-window__option" name="size" id="size-2" value="size-M">
-          <label for="size-2" class="modal-window__label">M</label>
-          <input type="radio" class="modal-window__option" name="size" id="size-3" value="size-L">
-          <label for="size-3" class="modal-window__label">L</label>
-          <button class="modal-window__btn" type="submit">Добавить</button>
-        </form>
-      </div>
-    </div>
+  <div class="overlay"></div>
+  <section class="modal-window overlay__modal">
+    <h2 class="modal-window__header">Добавить <br>в&nbsp;корзину</h2>
+    <span class="modal-window__desc">Выберите размер:</span>
+    <form action="https://echo.htmlacademy.ru/" class="modal-window__form">
+      <input type="radio" class="modal-window__option" name="size" id="size-1" value="size-S" checked>
+      <label for="size-1" class="modal-window__label">S</label>
+      <input type="radio" class="modal-window__option" name="size" id="size-2" value="size-M">
+      <label for="size-2" class="modal-window__label">M</label>
+      <input type="radio" class="modal-window__option" name="size" id="size-3" value="size-L">
+      <label for="size-3" class="modal-window__label">L</label>
+      <button class="modal-window__btn" type="submit">Добавить</button>
+    </form>
   </section>
 </body>
 

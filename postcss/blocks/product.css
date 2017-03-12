@@ -9,9 +9,8 @@
 }
 .product__item-info {
   display: flex;
-  flex-direction: row;
-  justify-content: stretch;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: stretch;
   font-family: inherit;
   padding-left: 28px;
@@ -33,6 +32,13 @@
   color: inherit;
   font-weight: inherit;
 }
+.product__item-buy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
 .product__desc {
   font-size: 13px;
   line-height: 30px;
@@ -45,14 +51,11 @@
   line-height: 24px;
   font-weight: bold;
   color: #000;
-  padding-top: 27px;
-  width: 50%;
 }
 .product__basket-btn {
-  align-self: flex-end;
+  /*align-self: flex-start;*/
   width: 30px;
   height: 30px;
   background-color: #000;
   font-size: 0;
-  margin-left: auto;
 }

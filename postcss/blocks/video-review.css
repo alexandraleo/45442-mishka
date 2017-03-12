@@ -1,15 +1,18 @@
 .video-review {
+  width: 260px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  align-self: center;
+  padding-top: 30px;
+  padding-bottom: 33px;
   background-color: #fff;
   color: #000;
-  padding: 0 30px;
   font-family: $font;
+  border: 1px solid $bd-color;
 }
 .video-review__wrapper {
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -24,13 +27,7 @@
   color: #000;
   margin: 0;
   padding-left: 90px;
-  padding-bottom: 25px;
-}
-.video-review__wrap {
-  margin: 0;
-  padding-left: 34px;
-  padding-right: 34px;
-  padding-top: 34px;
+  margin-bottom: 25px;
 }
 .video-review__desc {
   font-size: 13px;

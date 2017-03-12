@@ -9,7 +9,7 @@
 
 <body class="page">
   <header class="page-header">
-    <nav class="main-nav page-header__nav  main-nav--no-js">
+    <nav class="main-nav  main-nav--no-js  page-header__nav">
       <div class="logo">
         <a href="#"><img src="http://placehold.it/86x35" alt="Магазин Мишка" width="86" height="35"></a>
       </div>
@@ -20,7 +20,7 @@
       </ul>
       <ul class="main-nav__items-list">
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__item-icon main-nav__item-icon--icon-search">Поиск по&nbsp;сайту</a>
+          <a href="#" class="main-nav__link main-nav__item-icon main-nav__item-icon--icon-search">Поиск по&nbsp;сайту</a>
         </li>
         <li class="main-nav__item">
           <a href="#" class="main-nav__link main-nav__item-icon main-nav__item-icon--icon-cart">Корзина: пока пуста</a>
@@ -65,17 +65,17 @@
     <section class="advantages">
       <h2 class="advantages__header">Коротко о&nbsp;нас:</h2>
       <ul class="advantages__list">
-        <li class="advantages__item advantages__item--icon-1">Экологически чистые материалы</li>
-        <li class="advantages__item advantages__item--icon-2">Скандинавский стиль по&nbsp;российской цене</li>
-        <li class="advantages__item advantages__item--icon-3">Увеличивает лайки на&nbsp;фотографиях</li>
-        <li class="advantages__item advantages__item--icon-4">Связано вручную с&nbsp;любовью и&nbsp;умилением</li>
-        <li class="advantages__item advantages__item--icon-5">Поддержка отечественного производителя</li>
-        <li class="advantages__item advantages__item--icon-6">Поставляется в&nbsp;подарочной упаковке</li>
+        <li class="advantages__item advantages__item--icon-eco">Экологически чистые материалы</li>
+        <li class="advantages__item advantages__item--icon-style">Скандинавский стиль по&nbsp;российской цене</li>
+        <li class="advantages__item advantages__item--icon-like">Увеличивает лайки на&nbsp;фотографиях</li>
+        <li class="advantages__item advantages__item--icon-knit">Связано вручную с&nbsp;любовью и&nbsp;умилением</li>
+        <li class="advantages__item advantages__item--icon-native">Поддержка отечественного производителя</li>
+        <li class="advantages__item advantages__item--icon-gift">Поставляется в&nbsp;подарочной упаковке</li>
       </ul>
     </section>
-    <section class="reviews separator">
+    <section class="reviews slider separator">
       <h2 class="reviews__header">Отзывы</h2>
-      <div class="slider reviews__slider">
+      <div class="slider__items reviews__items">
         <div class="slider__item review">
           <blockquote class="review__blockquote">
             <p>Я&nbsp;молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!</p>
@@ -84,8 +84,8 @@
           <a href="#"  class="review__cite-address">@misssssiskras</a>
         </div>
         <div class="slider__toggles">
-          <a href="#" class="slider__toggle slider__toggle--previous">Предыдущий</a>
-          <a href="#" class="slider__toggle slider__toggle--next">Следующий</a>
+          <a href="#" class="slider__toggle slider__toggle--left-arrow">Предыдущий</a>
+          <a href="#" class="slider__toggle slider__toggle--right-arrow">Следующий</a>
         </div>
       </div>
       <a href="#" class="btn reviews__btn">Написать</a>
@@ -94,7 +94,9 @@
       <h2 class="contacts__header">Контакты</h2>
       <address class="contacts__address">
         <span class="contacts__type">e-mail:</span>
-        <a class="contacts__mail" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        <span class="contacts__text">
+          <a class="contacts__mail" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        </span>
         <span class="contacts__type">Адрес:</span>
         <span class="contacts__text">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис&nbsp;101</span>
       </address>
@@ -105,9 +107,9 @@
   </main>
   <footer class="page-footer">
     <ul class="socials page-footer__socials">
-      <li class="socials__item"><a href="#" class="socials__link socials__link--icon-1">Инстаграм</a></li>
-      <li class="socials__item"><a href="#" class="socials__link socials__link--icon-2">Фейсбук</a></li>
-      <li class="socials__item"><a href="#" class="socials__link socials__link--icon-3">Твиттер</a></li>
+      <li class="socials__item"><a href="#" class="socials__link socials__link--icon-insta">Инстаграм</a></li>
+      <li class="socials__item"><a href="#" class="socials__link socials__link--icon-fb">Фейсбук</a></li>
+      <li class="socials__item"><a href="#" class="socials__link socials__link--icon-twitter">Твиттер</a></li>
     </ul>
     <div class="page-footer__developer">
       <span class="page-footer__developer-text">Разработано</span>
@@ -115,19 +117,19 @@
     </div>
   </footer>
   <div class="overlay"></div>
-    <section class="modal-window overlay__modal">
-      <h2 class="modal-window__header">Добавить <br>в&nbsp;корзину</h2>
-      <span class="modal-window__desc">Выберите размер:</span>
-      <form action="https://echo.htmlacademy.ru/" class="modal-window__form">
-        <input type="radio" class="modal-window__option" name="size" id="size-1" value="size-S" checked>
-        <label for="size-1" class="modal-window__label">S</label>
-        <input type="radio" class="modal-window__option" name="size" id="size-2" value="size-M">
-        <label for="size-2" class="modal-window__label">M</label>
-        <input type="radio" class="modal-window__option" name="size" id="size-3" value="size-L">
-        <label for="size-3" class="modal-window__label">L</label>
-        <button class="modal-window__btn" type="submit">Добавить</button>
-      </form>
-    </section>
+  <section class="modal-window overlay__modal">
+    <h2 class="modal-window__header">Добавить <br>в&nbsp;корзину</h2>
+    <span class="modal-window__desc">Выберите размер:</span>
+    <form action="https://echo.htmlacademy.ru/" class="modal-window__form">
+      <input type="radio" class="modal-window__option" name="size" id="size-1" value="size-S" checked>
+      <label for="size-1" class="modal-window__label">S</label>
+      <input type="radio" class="modal-window__option" name="size" id="size-2" value="size-M">
+      <label for="size-2" class="modal-window__label">M</label>
+      <input type="radio" class="modal-window__option" name="size" id="size-3" value="size-L">
+      <label for="size-3" class="modal-window__label">L</label>
+      <button class="modal-window__btn" type="submit">Добавить</button>
+    </form>
+  </section>
 </body>
 
 </html>

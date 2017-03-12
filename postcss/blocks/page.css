@@ -1,8 +1,27 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"),
+    local("Open-Sans"),
+    url("../fonts/opensans.woff") format("woff"),
+    url("../fonts/opensans.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans bold";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Open Sans"),
+    local("Open-Sans"),
+    url("../fonts/opensansbold.woff") format("woff"),
+    url("../fonts/opensansbold.woff2") format("woff2");
+}
 .page {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-content: center;
+  font-family: "Open Sans", "Arial", sans-serif;
   width: 320px;
   margin: 0 auto;
 }

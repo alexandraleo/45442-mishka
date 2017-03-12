@@ -15,9 +15,10 @@
   width: 30px;
   height: 30px;
   padding: 0 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .socials__link {
-  content: "";
   padding: 14px;
   font-size: 0;
   background-color: #fff;
