@@ -1,0 +1,14 @@
+.btn {
+  background-color: #fff;
+  font-family: inherit;
+  color: $txt-color;
+  font-size: 17px;
+  line-height: 1.18;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border: 2px solid $txt-color;
+}

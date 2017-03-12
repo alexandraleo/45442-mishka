@@ -1,0 +1,25 @@
+.sub-menu {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 1.26;
+  color: #ffffff;
+  @mixin reset-list;
+}
+.sub-menu__item {
+  background-color: $green-light;
+}
+.sub-menu__item-link {
+  display: block;
+  text-decoration: none;
+  font-size: inherit;
+  color: inherit;
+  font-weight: inherit;
+  padding-right: 140px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.sub-menu__item:nth-child(2n) {
+  background-color: $green-dark;
+}

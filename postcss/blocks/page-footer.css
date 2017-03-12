@@ -1,0 +1,29 @@
+.page-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: inherit;
+  background-color: $grey;
+  color: #000;
+  padding: 0 30px;
+}
+.page-footer__socials {
+  width: 100%;
+  min-height: 80px;
+}
+.page-footer__developer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 80px;
+  border-top: 1px solid $bd-color;
+}
+.page-footer__developer-text {
+  font-family: inherit;
+  font-size: 19px;
+  line-height: 1;
+  font-weight: bold;
+  color: #000;
+}

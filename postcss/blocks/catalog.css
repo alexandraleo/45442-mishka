@@ -1,0 +1,15 @@
+.catalog {
+  @mixin block;
+}
+.catalog__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.catalog__item {
+  margin-bottom: 30px;
+}
+.catalog__item:last-child {
+  margin-bottom: 0;
+}

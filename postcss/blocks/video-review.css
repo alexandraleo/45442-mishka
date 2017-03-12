@@ -1,0 +1,41 @@
+.video-review {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-self: center;
+  padding-top: 30px;
+  padding-bottom: 33px;
+  background-color: #fff;
+  color: #000;
+  font-family: inherit;
+  border: 1px solid $bd-color;
+}
+.video-review__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid $bd-color;
+  padding: 30px 0;
+}
+.video-review__header {
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+  padding-left: 90px;
+  margin-bottom: 25px;
+}
+.video-review__desc {
+  font-size: 13px;
+  line-height: 1.85;
+  color: $txt-color;
+  padding: 33px 34px 30px;
+}
+.video-review__btn {
+  width: 192px;
+  align-self: center;
+}

@@ -1,0 +1,44 @@
+.contacts {
+  @mixin block;
+}
+.contacts__header {
+  margin: 0;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #000;
+  font-weight: bold;
+}
+.contacts__address {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 2;
+  color: $txt-color;
+  font-style: normal;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.contacts__type {
+  display: inline-flex;
+  width: 77px;
+}
+.contacts__text {
+  width: calc(100% - 77px);
+}
+.contacts__map {
+  align-self: center;
+  margin-bottom: 39px;
+}
+.contacts__mail {
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  font-style: inherit;
+  padding-bottom: 3px;
+  text-decoration: none;
+  border-bottom: 1px solid $green-light;
+  /*text-decoration-color: $green-light;*/  /*Не очень-то и работает*/
+}

@@ -4,26 +4,26 @@
 <head>
   <meta charset="utf-8">
   <title>HTML&nbsp;Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page">
   <header class="page-header">
-    <nav class="main-nav page-header__nav  main-nav--no-js">
+    <nav class="main-nav  main-nav--no-js  page-header__nav">
       <div class="logo">
         <a href="index.html"><img src="http://placehold.it/86x35" alt="Магазин Мишка" width="86" height="35"></a>
       </div>
       <button class="main-nav__btn" type="button">Меню</button>
       <ul class="main-nav__items-list">
-        <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-        <li class="main-nav__item"><a href="order.html">Вязание на&nbsp;заказ</a></li>
+        <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог товаров</a></li>
+        <li class="main-nav__item"><a href="order.html" class="main-nav__link">Вязание на&nbsp;заказ</a></li>
       </ul>
-      <ul class="main-nav__purchase-list">
+      <ul class="main-nav__items-list">
         <li class="main-nav__item">
-          <label class="main-nav__search-label main-nav__search-label--hidden" for="page-search">Поиск по&nbsp;сайту</label>
-          <input class="main-nav__search main-nav__item-icon main-nav__item-icon--icon-1" type="search" id="page-search" placeholder="Поиск по сайту">
+          <a href="#" class="main-nav__link main-nav__item-icon main-nav__item-icon--icon-search">Поиск по&nbsp;сайту</a>
         </li>
         <li class="main-nav__item">
-          <a href="#" class="main-nav__item-icon main-nav__item-icon--icon-2">Корзина: пока пуста</a>
+          <a href="#" class="main-nav__link main-nav__item-icon main-nav__item-icon--icon-cart">Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
@@ -76,16 +76,16 @@
       </fieldset>
       <fieldset class="form__form-group">
         <label for="phone" class="form__group-name">Тел</label>
-        <input type="tel" class="form__contacts-option form__contacts-option--icon-1" id="phone" placeholder="+7 XXX XX XX*" title="Введите телефон в формате +7 XXX XX XX" name="phone" required>
+        <input type="tel" class="form__contacts-option form__contacts-option--icon-phone" id="phone" placeholder="+7 XXX XX XX*" title="Введите телефон в формате +7 XXX XX XX" name="phone" required>
       </fieldset>
       <fieldset class="form__form-group">
         <label for="mail" class="form__group-name">E-mail</label>
-        <input type="email" class="form__contacts-option form__contacts-option--icon-2" id="mail" placeholder="Ваш email*" name="email" required>
+        <input type="email" class="form__contacts-option form__contacts-option--icon-mail" id="mail" placeholder="Ваш email*" name="email" required>
       </fieldset>
       <fieldset class="form__form-group">
         <label for="addition" class="form__group-name">Доп</label>
-        <textarea id="addition" class="form__textarea" name="addition" rows="5" placeholder="Опишите все ваши
-пожелания к заказу"></textarea>
+        <textarea id="addition" class="form__textarea" name="addition" placeholder="Опишите все ваши пожелания к заказу">
+        </textarea>
       </fieldset>
       <span class="form__notification">*Поля обязательны для заполнения</span>
       <button type="submit" class="form__btn btn">Отправить заказ</button>
@@ -93,9 +93,15 @@
   </main>
   <footer class="page-footer">
     <ul class="socials page-footer__socials">
-      <li><a href="#" class="socials__link socials__link--icon-1">Инстаграм</a></li>
-      <li><a href="#" class="socials__link socials__link--icon-2">Фейсбук</a></li>
-      <li><a href="#" class="socials__link socials__link--icon-3">Твиттер</a></li>
+      <li class="socials__item">
+        <a href="#" class="socials__link socials__link--icon-insta" aria-label="Инстаграм"></a>
+      </li>
+      <li class="socials__item">
+        <a href="#" class="socials__link socials__link--icon-fb" aria-label="Фейсбук"></a>
+      </li>
+      <li class="socials__item">
+        <a href="#" class="socials__link socials__link--icon-twitter" aria-label="Твиттер"></a>
+      </li>
     </ul>
     <div class="page-footer__developer">
       <span class="page-footer__developer-text">Разработано</span>
