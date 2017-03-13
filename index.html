@@ -12,21 +12,23 @@
     <nav class="main-nav  main-nav--no-js  page-header__nav">
       <div class="logo">
         <a href="#"><img src="http://placehold.it/86x35" alt="Магазин Мишка" width="86" height="35"></a>
-        <button class="main-nav__btn main-nav__btn--icon-menu-open main-nav__btn--icon-menu-close" type="button">Меню</button>
       </div>
-
-      <ul class="main-nav__items-list main-nav__items-list--closed">
-        <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог товаров</a></li>
-        <li class="main-nav__item"><a href="order.html" class="main-nav__link">Вязание на&nbsp;заказ</a></li>
-      </ul>
-      <ul class="main-nav__items-list main-nav__items-list--closed">
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link main-nav__item-icon main-nav__item-icon--icon-search">Поиск по&nbsp;сайту</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link main-nav__item-icon main-nav__item-icon--icon-cart">Корзина: пока пуста</a>
-        </li>
-      </ul>
+      <button class="main-nav__btn main-nav__btn-open" type="button">Меню</button>
+      <button class="main-nav__btn main-nav__btn-close" type="button">Закрыть</button>
+      <div class="main-nav__list-wrap">
+        <ul class="main-nav__items-list">
+          <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="order.html" class="main-nav__link">Вязание на&nbsp;заказ</a></li>
+        </ul>
+        <ul class="main-nav__items-list">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link main-nav__item-icon main-nav__item-icon--icon-search">Поиск по&nbsp;сайту</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link main-nav__item-icon main-nav__item-icon--icon-cart">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <h1 class="page-header__title page-header__title--main">Милые штуки ручной <br>работы для дома</h1>
     <ul class="sub-menu">
@@ -137,6 +139,7 @@
       <button class="modal-window__btn" type="submit">Добавить</button>
     </form>
   </section>
+  <script src="js/modal.js" charset="utf-8"></script>
 </body>
 
 </html>
