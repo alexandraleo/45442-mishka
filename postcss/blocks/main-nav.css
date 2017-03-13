@@ -1,4 +1,5 @@
 .main-nav {
+  position: relative;
   font-family: inherit;
   color: #000000;
   font-size: 17px;
@@ -12,6 +13,9 @@
   align-items: stretch;
   @mixin reset-list;
 }
+.main-nav__items-list--closed {
+  display: none;
+}
 .main-nav__item {
   border-bottom: 1px solid #ececec;
 }
@@ -22,4 +26,10 @@
   padding-left: 75px;
   padding-top: 27px;
   padding-bottom: 27px;
+}
+.main-nav__btn {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translate(30%, -50%);
 }

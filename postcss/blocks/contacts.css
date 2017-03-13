@@ -1,8 +1,11 @@
 .contacts {
   @mixin block;
+  padding-top: 35px;
+  padding-bottom: 40px
 }
 .contacts__header {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
   font-family: inherit;
   font-size: 18px;
   line-height: 1.7;
@@ -18,19 +21,20 @@
   line-height: 2;
   color: $txt-color;
   font-style: normal;
-  padding-top: 36px;
-  padding-bottom: 36px;
+  padding-top: 16px;
+  padding-bottom: 37px;
 }
 .contacts__type {
   display: inline-flex;
   width: 77px;
+  padding-bottom: 30px;
 }
 .contacts__text {
   width: calc(100% - 77px);
 }
 .contacts__map {
   align-self: center;
-  margin-bottom: 39px;
+  margin-bottom: 33px;
 }
 .contacts__mail {
   font-size: inherit;

@@ -1,0 +1,12 @@
+.logo {
+  min-height: 80px;
+  border-bottom: 1px solid $bd-color;
+}
+.logo img {
+  position: absolute;
+  width: 86px;
+  height: 35px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
