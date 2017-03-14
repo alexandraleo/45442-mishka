@@ -42,12 +42,11 @@
 }
 .main-nav__btn {
   position: absolute;
+  top: 50%;
   right: 30px;
-  transform: translate(30%, -50%);
+  transform: translate(0, -50%);
 }
-.main-nav__btn-open {
-  top: 0;
+.main-nav__btn--close {
+  background-color: red;
 }
-.main-nav__btn-close {
-  bottom: 0;
-}
+/*Только попробовать работоспособность кода*/
