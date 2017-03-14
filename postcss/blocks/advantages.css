@@ -1,6 +1,6 @@
 .advantages {
   @mixin block;
-  padding-top: 27px;
+  padding-top: 29px;
   padding-bottom: 35px;
 }
 .advantages__header {

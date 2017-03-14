@@ -6,7 +6,7 @@
   background-color: #fff;
   color: #000;
   font-family: inherit;
-  /*padding-bottom: 55px;*/
+  /*padding-bottom: 58px;*/
 }
 .page-main__desc {
   font-family: inherit;
@@ -17,4 +17,8 @@
   padding-right: 30px;
   margin: 0;
   padding-top: 30px;
+}
+.page-main__video {
+  margin-top: 29px;
+  margin-bottom: 58px;
 }

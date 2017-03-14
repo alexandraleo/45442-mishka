@@ -5,21 +5,29 @@
   justify-content: flex-start;
   align-items: flex-start;
   align-self: center;
-  padding-top: 30px;
+  padding-top: 23px;
   padding-bottom: 33px;
   background-color: #fff;
   color: #000;
   font-family: inherit;
   border: 1px solid $bd-color;
 }
+.video-review__play-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
 .video-review__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   border: 1px solid $bd-color;
   padding: 30px 0;
 }
+
 .video-review__header {
   font-size: 17px;
   line-height: 1.4;
@@ -33,7 +41,11 @@
   font-size: 13px;
   line-height: 1.85;
   color: $txt-color;
-  padding: 33px 34px 30px;
+  padding-left: 34px;
+  padding-right: 34px;
+  padding-top: 23px;
+  padding-bottom: 29px;
+  /*padding: 33px 34px 30px;*/
 }
 .video-review__btn {
   width: 192px;

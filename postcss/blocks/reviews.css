@@ -1,7 +1,7 @@
 .reviews {
   @mixin block;
   padding-top: 23px;
-  padding-bottom: 44px;
+  padding-bottom: 45px;
 }
 .reviews__header {
   margin: 0;
