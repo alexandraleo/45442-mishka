@@ -16,9 +16,12 @@
   padding-left: 30px;
   padding-right: 30px;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 24px;
 }
 .page-main__video {
   margin-top: 29px;
   margin-bottom: 58px;
+}
+.page-main__form {
+  margin-bottom: 57px;
 }

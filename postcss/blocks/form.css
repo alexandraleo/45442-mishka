@@ -1,7 +1,9 @@
 .form {
   @mixin block;
+  padding-top: 34px;
 }
 .form__form-group {
+  position: relative;
   margin: 0;
   padding: 0;
   border: none;
@@ -11,17 +13,23 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: stretch;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 31px;
+  padding-bottom: 39px;
 }
 .form__group-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 62px;
+  transform: translate(0, -50%);
   font-family: inherit;
   font-size: 17px;
   line-height: 1;
   color: $green-light;
+  background-color: #fff;
   text-transform: uppercase;
   font-weight: bold;
-  margin-left: 0;
+  margin-left: -2px;
 }
 .form__option {
   display: none;
@@ -32,10 +40,15 @@
   line-height: 1.1;
   color: #000;
   font-weight: bold;
-  padding-left: 60px;
+  padding-left: 62px;
   padding-top: 10px;
-  padding-bottom: 10px;
-  /*outline: 1px solid red;*/
+  padding-bottom: 14px;
+}
+.form__checkbox-group > .form__option-label {
+  padding-bottom: 34px;
+}
+.form__checkbox-group {
+  padding-bottom: 15px;
 }
 .form__text-label {
   font-family: inherit;
@@ -43,7 +56,11 @@
   line-height: 1.1;
   color: #000;
   font-weight: bold;
-  padding-top: 25px;
+  margin-top: 30px;
+}
+.form__name-group {
+  padding-top: 33px;
+  padding-bottom: 18px;
 }
 .form__text {
   font-family: inherit;
@@ -54,7 +71,12 @@
   line-height: 1.1;
   color: $txt-color;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 17px;
+  margin-bottom: 20px;
+}
+.form__phone-group {
+  padding-top: 14px;
+  padding-bottom: 41px;
 }
 .form__contacts-option {
   font-family: inherit;
@@ -65,8 +87,14 @@
   line-height: 1.5;
   color: $txt-color;
   padding-top: 12px;
-  padding-bottom: 12px;
+  padding-bottom: 14px;
   padding-right: 40px;
+}
+.form__mail-group {
+  padding-top: 16px;
+}
+.form__mail-group > .form__group-name {
+  min-width: 82px;
 }
 .form__textarea {
   font-family: inherit;
@@ -77,11 +105,17 @@
   line-height: 1.1;
   color: $txt-color;
   border: 2px solid #000;
-  margin-top: 25px;
+  margin-top: 2px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.form__text-group {
+  padding-bottom: 16px;
 }
 .form__notification {
   font-size: 14px;
   line-height: 1.15;
   color: $txt-color;
+  margin-top: 0px;
   margin-bottom: 30px;
 }

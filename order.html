@@ -41,7 +41,7 @@
         <input type="radio" id="radio-2" class="form__option" name="order-type" value="toy">
         <label for="radio-2" class="form__option-label form__option-label--radio">Детская игрушка</label>
       </fieldset>
-      <fieldset class="form__form-group">
+      <fieldset class="form__form-group form__checkbox-group">
         <legend class="form__group-name">Цвет</legend>
         <input type="checkbox" id="checkbox-1" class="form__option" name="order-color[]" value="white" checked>
         <label for="checkbox-1" class="form__option-label form__option-label--checkbox">Белый</label>
@@ -61,7 +61,7 @@
         <input type="checkbox" id="checkbox-6" class="form__option" name="order-color[]" value="orange">
         <label for="checkbox-6" class="form__option-label form__option-label--checkbox">Оранжевый</label>
       </fieldset>
-      <fieldset class="form__form-group">
+      <fieldset class="form__form-group form__name-group">
         <legend class="form__group-name">ФИО</legend>
         <div class="form__option-group">
           <label for="name-1" class="form__text-label">Имя</label>
@@ -76,15 +76,15 @@
           <input type="text" class="form__text" id="name-3" name="middle-name" placeholder="Отчество, если желаете">
         </div>
       </fieldset>
-      <fieldset class="form__form-group">
+      <fieldset class="form__form-group form__phone-group">
         <label for="phone" class="form__group-name">Тел</label>
         <input type="tel" class="form__contacts-option form__contacts-option--icon-phone" id="phone" placeholder="+7 XXX XX XX*" title="Введите телефон в формате +7 XXX XX XX" name="phone" required>
       </fieldset>
-      <fieldset class="form__form-group">
+      <fieldset class="form__form-group form__mail-group">
         <label for="mail" class="form__group-name">E-mail</label>
-        <input type="email" class="form__contacts-option form__contacts-option--icon-mail" id="mail" placeholder="Ваш email*" name="email" required>
+        <input type="email" class="form__contacts-option form__contacts-option--icon-mail" id="mail" placeholder="Ваш Email*" name="email" required>
       </fieldset>
-      <fieldset class="form__form-group">
+      <fieldset class="form__form-group form__text-group">
         <label for="addition" class="form__group-name">Доп</label>
         <textarea id="addition" class="form__textarea" name="addition" placeholder="Опишите все ваши пожелания к заказу">
         </textarea>
