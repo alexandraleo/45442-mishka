@@ -23,3 +23,20 @@
 .sub-menu__item:nth-child(2n) {
   background-color: $green-dark;
 }
+.sub-menu__item:hover {
+  transform: scaleY(1.04);
+  background-color: #59d5bc;
+}
+.sub-menu__item-link:hover {
+  transform: translateY(-5px);
+}
+.sub-menu__item:nth-child(2n):hover {
+  transform: scaleY(1.04);
+  background-color: #46c1ae;
+}
+.sub-menu__item-link:nth-child(2n):hover {
+  transform: translateY(-5px);
+}
+.sub-menu__item-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}

@@ -40,6 +40,12 @@
   padding-top: 27px;
   padding-bottom: 27px;
 }
+.main-nav__link:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+.main-nav__link:active {
+    color: rgba(0, 0, 0, 0.3);
+}
 .main-nav__btn {
   position: absolute;
   top: 50%;
