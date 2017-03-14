@@ -25,6 +25,12 @@
   padding-top: 25px;
   padding-bottom: 6px;
 }
+.product__item-title:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+.product__item-title:active {
+  color: rgba(0, 0, 0, 0.3);
+}
 .product__title-link {
   text-decoration: none;
   font-size: inherit;
@@ -63,4 +69,10 @@
   height: 30px;
   background-color: #000;
   font-size: 0;
+}
+.product:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.product:active {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }

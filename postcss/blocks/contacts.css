@@ -46,3 +46,10 @@
   border-bottom: 1px solid $green-light;
   /*text-decoration-color: $green-light;*/  /*Не очень-то и работает*/
 }
+.contacts__mail:hover {
+  color: $green-light;
+}
+.contacts__mail:active {
+  color: rgba(70, 193, 174, 0.3);
+  border-bottom: 1px solid rgba(70, 193, 174, 0.3);
+}

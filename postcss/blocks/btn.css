@@ -12,3 +12,10 @@
   padding-bottom: 14px;
   border: 2px solid $txt-color;
 }
+.btn:hover {
+  background-color: #444444;
+  color: #ffffff;
+}
+.btn:active {
+  color: rgba(255, 255, 255, 0.3);
+}
