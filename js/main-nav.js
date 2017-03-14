@@ -10,9 +10,12 @@ btn.addEventListener("click", function(event) {
 var basket = document.querySelector(".modal-show");
 var modal = document.querySelector(".modal-window");
 var overlay = document.querySelector(".overlay");
+var els = document.getElementsByClassName("modal-show");
 
-basket.addEventListener("click", function(event) {
+for (i=0 ; i<els.length ; i++ ) {
+  els[i].addEventListener("click", function(event) {
   event.preventDefault();
   overlay.classList.toggle("overlay--shown");
   modal.classList.toggle("modal-window--opened");
 });
+}
