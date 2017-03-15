@@ -13,16 +13,26 @@
 }
 .advantages__list {
   @mixin reset-list;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   font-size: 17px;
   line-height: 1.175;
   color: inherit;
   font-weight: bold;
-  padding-top: 55px;
-  padding-bottom: 30px;
+  /*padding-top: 55px;*/
+  /*padding-bottom: 30px;*/
   padding-right: 10px;
 }
 .advantages__item:last-child {
   padding-bottom: 0;
+}
+.advantages__text {
+  padding-top: 18px;
+  padding-bottom: 30px;
 }

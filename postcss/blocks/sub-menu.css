@@ -10,6 +10,7 @@
   background-color: $green-light;
 }
 .sub-menu__item-link {
+  position: relative;
   display: block;
   text-decoration: none;
   font-size: inherit;
@@ -19,6 +20,31 @@
   padding-left: 29px;
   padding-top: 27px;
   padding-bottom: 30px;
+}
+.sub-menu__item-link::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translate(0, -50%);
+  width: 70px;
+  height: 70px;
+}
+.sub-menu__item-link--interior::after {
+  background: transparent url("../img/icon-interior.svg") 19px 7px no-repeat;
+  opacity: 0.5;
+}
+.sub-menu__item-link--toy::after {
+  background: transparent url("../img/icon-toy.svg") 7px 3px no-repeat;
+  opacity: 0.5;
+}
+.sub-menu__item-link--interior:hover::after,
+.sub-menu__item-link--toy:hover::after {
+  opacity: 0.7;
+}
+.sub-menu__item-link--interior:active::after,
+.sub-menu__item-link--toy:active::after {
+  opacity: 0.3;
 }
 .sub-menu__item:nth-child(2n) {
   background-color: $green-dark;
