@@ -12,22 +12,20 @@
   font-family: inherit;
   border: 1px solid $bd-color;
 }
-.video-review__play-btn {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-}
-.video-review__wrapper {
+.video-review__wrap {
   position: relative;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border: 1px solid $bd-color;
-  padding: 30px 0;
 }
-
+.video-review__play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
 .video-review__header {
   font-size: 17px;
   line-height: 1.4;
@@ -44,8 +42,7 @@
   padding-left: 34px;
   padding-right: 34px;
   padding-top: 23px;
-  padding-bottom: 29px;
-  /*padding: 33px 34px 30px;*/
+  padding-bottom: 27px;
 }
 .video-review__btn {
   width: 192px;
