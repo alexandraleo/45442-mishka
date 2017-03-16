@@ -1,6 +1,6 @@
 .advantages {
   @mixin block;
-  padding-top: 29px;
+  padding-top: 27px;
   padding-bottom: 35px;
 }
 .advantages__header {
@@ -25,14 +25,38 @@
   line-height: 1.175;
   color: inherit;
   font-weight: bold;
-  /*padding-top: 55px;*/
-  /*padding-bottom: 30px;*/
   padding-right: 10px;
-}
-.advantages__item:last-child {
-  padding-bottom: 0;
 }
 .advantages__text {
   padding-top: 18px;
   padding-bottom: 30px;
+}
+.advantages__item:last-child .advantages__text {
+  padding-bottom: 0;
+}
+.advantages__item--icon-eco {
+margin-top: 1px;
+  margin-left: 8px;
+}
+.advantages__item--icon-style {
+  margin-bottom: 10px;
+}
+.advantages__item--icon-like {
+  margin-top: 7px;
+  margin-left: 7px;
+  margin-bottom: 2px;
+}
+.advantages__item--icon-knit {
+  margin-top: 3px;
+  margin-left: 2px;
+}
+.advantages__item--icon-native {
+  margin-top: 5px;
+  margin-left: -6px;
+  margin-bottom: 8px;
+}
+.advantages__item--icon-gift {
+  margin-top: 3px;
+  margin-left: 2px;
+  margin-bottom: 3px;
 }
