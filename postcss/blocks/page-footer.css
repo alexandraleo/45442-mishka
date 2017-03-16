@@ -15,8 +15,9 @@
 }
 .page-footer__developer-link {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  text-decoration: none;
   width: 100%;
   min-height: 80px;
   border-top: 1px solid $bd-color;
@@ -24,8 +25,19 @@
 .page-footer__developer-text {
   font-family: inherit;
   font-size: 19px;
-  text-decoration: none;
   line-height: 1;
   font-weight: bold;
   color: #000;
+  margin-right: 31px;
+  padding-bottom: 6px;
+}
+.socials__link--icon-fb {
+  margin-top: 2px;
+  margin-right: 2px;
+}
+.socials__link--icon-insta {
+  margin-top: 4px;
+}
+.socials__link--icon-twitter {
+  margin-right: 4px;
 }
