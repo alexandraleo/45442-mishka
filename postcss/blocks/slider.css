@@ -27,3 +27,9 @@
   border-top: 1px solid $bd-color;
   border-bottom: 1px solid $bd-color;
 }
+.slider__toggle:hover::before {
+  opacity: 0.6;
+}
+.slider__toggle:active::before {
+  opacity: 0.3;
+}

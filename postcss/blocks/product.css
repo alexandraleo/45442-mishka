@@ -4,7 +4,7 @@
   justify-content: flex-start;
   align-items: stretch;
   font-family: inherit;
-  padding-bottom: 23px;
+  padding-bottom: 28px;
   border: 1px solid $bd-color;
 }
 .product__item-info {
@@ -54,6 +54,7 @@
   font-size: 13px;
   line-height: 2.3;
   color: $txt-color;
+  padding-top: 1px;
   padding-bottom: 20px;
   border-bottom: 1px solid $bd-color;
 }
@@ -64,11 +65,8 @@
   color: #000;
 }
 .product__basket-btn {
-  /*align-self: flex-start;*/
-  width: 30px;
-  height: 30px;
-  background-color: #000;
-  font-size: 0;
+  width: 20px;
+  height: 18px;
 }
 .product:hover {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);

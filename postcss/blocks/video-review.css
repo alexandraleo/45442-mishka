@@ -1,7 +1,8 @@
 .video-review {
   width: 260px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
   align-self: center;
@@ -24,16 +25,30 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -45%);
+  width: 101px;
+  height: 77px;
+  background: transparent url("../img/icon-play.svg") 0 0 no-repeat;
+  border: none;
+}
+
+.video-review__header-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
 }
 .video-review__header {
+  width: 66%;
   font-size: 17px;
   line-height: 1.4;
   font-weight: bold;
   color: #000;
   margin: 0;
-  padding-left: 90px;
-  margin-bottom: 25px;
+}
+.video-review__header--icon {
+  flex-shrink: 0;
+  margin-top: 6px;
+  margin-left: 34px;
 }
 .video-review__desc {
   font-size: 13px;
@@ -42,9 +57,9 @@
   padding-left: 34px;
   padding-right: 34px;
   padding-top: 29px;
-  padding-bottom: 27px;
+  padding-bottom: 25px;
 }
 .video-review__btn {
   width: 192px;
-  align-self: center;
+  margin: 0 auto;
 }

@@ -33,8 +33,18 @@
   width: 70.4%;
 }
 .contacts__map {
+  position: relative;
   align-self: center;
   margin-bottom: 35px;
+}
+.contacts__map::before {
+  content: "";
+  position: absolute;
+  top: 35.5%;
+  left: 38.5%;
+  width: 66px;
+  height: 101px;
+  background: transparent url("../img/icon-map-pin.svg") 0 0 no-repeat;
 }
 .contacts__mail {
   font-size: inherit;
