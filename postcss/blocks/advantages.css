@@ -34,28 +34,28 @@
 .advantages__item:last-child .advantages__text {
   padding-bottom: 0;
 }
-.advantages__item--icon-eco {
+.advantages__item-icon--icon-eco {
 margin-top: 1px;
   margin-left: 8px;
 }
-.advantages__item--icon-style {
+.advantages__item-icon--icon-style {
   margin-bottom: 10px;
 }
-.advantages__item--icon-like {
+.advantages__item-icon--icon-like {
   margin-top: 7px;
   margin-left: 7px;
   margin-bottom: 2px;
 }
-.advantages__item--icon-knit {
+.advantages__item-icon--icon-knit {
   margin-top: 3px;
   margin-left: 2px;
 }
-.advantages__item--icon-native {
+.advantages__item-icon--icon-native {
   margin-top: 5px;
   margin-left: -6px;
   margin-bottom: 8px;
 }
-.advantages__item--icon-gift {
+.advantages__item-icon--icon-gift {
   margin-top: 3px;
   margin-left: 2px;
   margin-bottom: 3px;
