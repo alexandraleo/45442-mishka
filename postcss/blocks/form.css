@@ -82,7 +82,18 @@
 }
 .form__option:checked + .form__option-label--checkbox::before {
   background: #fff url("../img/icon-tick.svg") 50% 50% no-repeat;
-
+}
+.form__option-label--radio:hover::before {
+  box-shadow: 0px 0px 0 1px $green-light;
+}
+.form__option-label--checkbox:hover::before {
+  border-color: $green-light;
+}
+.form__option-label--radio:active::before {
+  box-shadow: 0px 0px 0 1px #c7c7c7;
+}
+.form__option-label--checkbox:active::before {
+  border-color: #c7c7c7;
 }
 .form__checkbox-group {
   padding-top: 33px;
@@ -163,6 +174,7 @@
   padding-left: 15px;
   padding-bottom: 0;
   margin-bottom: 0;
+  white-space: normal;
 }
 .form__textarea:hover {
   border: 2px solid #62d1ba;
