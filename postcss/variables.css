@@ -5,3 +5,6 @@ $bd-color: #ececec;
 $green-light: #63d1bb;
 $green-dark: #56c3b2;
 $txt-color: #444444;
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1150px;

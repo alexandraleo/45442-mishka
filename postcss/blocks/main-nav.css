@@ -35,7 +35,7 @@
   position: static;
 }
 .main-nav__item {
-  width: 100%;
+  /*width: 100%;*/
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -79,4 +79,22 @@
 }
 .main-nav__btn--close {
   background: #fff url("../img/icon-menu-close.svg") 0 0 no-repeat;
+}
+
+
+@media (min-width: $tablet-width)  {
+  .main-nav__btn {
+    display: none;
+  }
+  .main-nav__list-wrap {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-nav__items-list {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
 }

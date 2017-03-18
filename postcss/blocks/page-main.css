@@ -25,3 +25,17 @@
 .page-main__form {
   margin-bottom: 57px;
 }
+
+@media (min-width: $tablet-width)  {
+  .page-main {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
