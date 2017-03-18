@@ -1,12 +1,12 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
   font-family: inherit;
   background-color: $body-bg;
   @mixin container;
   outline: 1px solid red;
+  background-color: #f9f9f9;
 }
 .page-header__title {
+  width: 100%;
   margin: 0;
   font-size: 27px;
   line-height: 1.12;

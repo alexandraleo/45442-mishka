@@ -1,41 +1,42 @@
 .main-nav {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   font-family: inherit;
   color: #000000;
   font-size: 17px;
   line-height: 1.41;
   font-weight: bold;
-  background-color: #fff;
-}
-
-.main-nav__list-wrap {
-  position: absolute;
-  top: 80px;
-  left: 0;
-  width: 100%;
-  display: none;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
+  background-color: #f9f9f9;
 }
 .main-nav__items-list {
-  display: flex;
+  position: absolute;
+  width: 100%;
+  display: none;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
   @mixin reset-list;
   background-color: #fff;
 }
-.main-nav__list-wrap--opened {
+.main-nav__items-list--opened {
   display: flex;
   z-index: 100;
+}
+.main-nav__items-links {
+  top: 80px;
+  left: 0;
+}
+.main-nav__user-links {
+  top: 238px;
+  left: 0;
 }
 .main-nav--no-js{
   display: flex;
   position: static;
 }
 .main-nav__item {
-  /*width: 100%;*/
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -46,6 +47,7 @@
   display: inline-flex;
 }
 .main-nav__link {
+  width: 100%;
   position: relative;
   display: block;
   text-decoration: none;
@@ -80,18 +82,66 @@
 .main-nav__btn--close {
   background: #fff url("../img/icon-menu-close.svg") 0 0 no-repeat;
 }
-
+.main-nav__offer {
+  display: none;
+}
 
 @media (min-width: $tablet-width)  {
   .main-nav__btn {
     display: none;
   }
-  .main-nav__list-wrap {
-    display: flex;
-    flex-direction: row;
+  .main-nav__item {
+    width: auto;
+    border-left: 1px solid #ececec;
+  }
+  .main-nav__link {
+    padding-top: 31px;
+    padding-bottom: 34px;
   }
   .main-nav__items-list {
+    display: flex;
+    position: static;
     flex-direction: row;
+    justify-content: flex-start;
+  }
+  .main-nav__items-links {
+    order: 2;
+    background-color: #f9f9f9;
+    padding-left: 0;
+  }
+  .main-nav__items-links .main-nav__item {
+    padding-left: 0;
+    border: none;
+
+  }
+  .main-nav__items-links .main-nav__link {
+    font-size: 15px;
+    line-height: 1.6;
+    padding-left: 0;
+    padding-top: 18px;
+    padding-bottom: 20px;
+    padding-right: 37px;
+  }
+  .main-nav__user-links {
+    justify-content: flex-end;
+    order: 1;
+    flex-grow: 1;
+  }
+  .main-nav__items-list {
+    width: auto;
+  }
+ .main-nav__search-link {
+    @mixin hidden;
+  }
+  .main-nav__offer {
+    display: block;
+    order: 10;
+    margin-left: auto;
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: normal;
+    color: $txt-color;
+    padding-top: 18px;
   }
 }
 

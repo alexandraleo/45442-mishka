@@ -66,3 +66,15 @@
 .sub-menu__item-link:active {
   color: rgba(255, 255, 255, 0.3);
 }
+
+@media (min-width: $tablet-width)  {
+  .sub-menu {
+    flex-direction: row;
+  }
+  .sub-menu__item {
+    width: 50%
+  }
+}
+
+@media (min-width: $desktop-width) {
+}

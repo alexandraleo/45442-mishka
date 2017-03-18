@@ -6,16 +6,17 @@
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  background-color: #fff;
 }
 .logo img {
   width: 86px;
   height: 36px;
 }
 .logo__link {
-  padding-top: 22px;
+  padding-top: 18px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
 
   &:hover {
     opacity: 0.6;
@@ -27,13 +28,11 @@
 
 @media (min-width: $tablet-width)  {
   .logo {
-    width: 200px;
+    width: 150px;
     justify-content: flex-start;
-    align-self: flex-start;
-    padding-left: 40px;
     margin: 0;
   }
 }
 
-/*@media (min-width: $desktop-width) {
-  /*width: 1050px;*/
+@media (min-width: $desktop-width) {
+}
