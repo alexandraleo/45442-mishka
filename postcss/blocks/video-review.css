@@ -1,41 +1,65 @@
 .video-review {
   width: 260px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
   align-self: center;
-  padding-top: 30px;
+  padding-top: 23px;
   padding-bottom: 33px;
   background-color: #fff;
   color: #000;
   font-family: inherit;
   border: 1px solid $bd-color;
 }
-.video-review__wrapper {
+.video-review__wrap {
+  position: relative;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
-  border: 1px solid $bd-color;
-  padding: 30px 0;
+  align-items: center;
+}
+.video-review__play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  width: 101px;
+  height: 77px;
+  background: transparent url("../img/icon-play.svg") 0 0 no-repeat;
+  border: none;
+}
+
+.video-review__header-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
 }
 .video-review__header {
+  width: 66%;
   font-size: 17px;
   line-height: 1.4;
   font-weight: bold;
   color: #000;
   margin: 0;
-  padding-left: 90px;
-  margin-bottom: 25px;
+}
+.video-review__header-icon--icon-video {
+  flex-shrink: 0;
+  margin-top: 6px;
+  margin-left: 34px;
 }
 .video-review__desc {
   font-size: 13px;
   line-height: 1.85;
   color: $txt-color;
-  padding: 33px 34px 30px;
+  padding-left: 34px;
+  padding-right: 34px;
+  padding-top: 29px;
+  padding-bottom: 24px;
 }
 .video-review__btn {
   width: 192px;
-  align-self: center;
+  margin: 0 auto;
 }

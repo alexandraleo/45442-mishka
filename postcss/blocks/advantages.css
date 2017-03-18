@@ -1,8 +1,11 @@
 .advantages {
   @mixin block;
+  padding-top: 27px;
+  padding-bottom: 35px;
 }
 .advantages__header {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
   font-size: 25px;
   line-height: 1.2;
   color: #000;
@@ -10,15 +13,50 @@
 }
 .advantages__list {
   @mixin reset-list;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   font-size: 17px;
-  line-height: 1.18;
+  line-height: 1.175;
   color: inherit;
   font-weight: bold;
-  padding-top: 60px;
-  padding-bottom: 33px;
+  padding-right: 10px;
 }
-.advantages__item:last-child {
+.advantages__text {
+  padding-top: 18px;
+  padding-bottom: 30px;
+}
+.advantages__item:last-child .advantages__text {
   padding-bottom: 0;
+}
+.advantages__item-icon--icon-eco {
+margin-top: 1px;
+  margin-left: 8px;
+}
+.advantages__item-icon--icon-style {
+  margin-bottom: 10px;
+}
+.advantages__item-icon--icon-like {
+  margin-top: 7px;
+  margin-left: 7px;
+  margin-bottom: 2px;
+}
+.advantages__item-icon--icon-knit {
+  margin-top: 3px;
+  margin-left: 2px;
+}
+.advantages__item-icon--icon-native {
+  margin-top: 5px;
+  margin-left: -6px;
+  margin-bottom: 8px;
+}
+.advantages__item-icon--icon-gift {
+  margin-top: 3px;
+  margin-left: 2px;
+  margin-bottom: 3px;
 }
