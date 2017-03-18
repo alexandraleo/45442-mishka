@@ -1,6 +1,7 @@
 .form {
   @mixin block;
   padding-top: 32px;
+  padding-bottom: 56px;
 }
 .form__form-group {
   position: relative;
