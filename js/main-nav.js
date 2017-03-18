@@ -1,10 +1,13 @@
 var btn = document.querySelector(".main-nav__btn");
 var menu = document.querySelector(".main-nav__list-wrap");
+var noJS = document.querySelector(".main-nav--no-js");
 
+menu.classList.remove("main-nav--no-js");
 btn.addEventListener("click", function(event) {
- event.preventDefault();
+  event.preventDefault();
   menu.classList.toggle("main-nav__list-wrap--opened");
-  btn.classList.toggle("main-nav__btn-close");
+  btn.classList.toggle("main-nav__btn--open");
+  btn.classList.toggle("main-nav__btn--close");
 });
 
 

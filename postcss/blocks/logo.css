@@ -3,7 +3,8 @@
   border-bottom: 1px solid $bd-color;
   display: flex;
   justify-content: center;
-  align-items: stretch;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .logo img {
   width: 86px;
@@ -13,6 +14,7 @@
   padding-top: 22px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 15px;
 
   &:hover {
     opacity: 0.6;
