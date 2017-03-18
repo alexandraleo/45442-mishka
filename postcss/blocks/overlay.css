@@ -1,12 +1,16 @@
 .overlay {
+  display: none;
   position: fixed;
+  top: 0;
+  left: 0;
+
   width: 100vw;
+  max-width: 100%;
+  min-height: 100%;
   /*Ширину убирает только слева, справа в бесконечность тянется бэкграунд*/
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.9);
 }
-.overlay__modal {
-  position: fixed;
-  top: 25vh;
-  z-index: 10;
+.overlay--shown {
+  display: flex;
 }

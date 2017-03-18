@@ -1,5 +1,7 @@
 .reviews {
   @mixin block;
+  padding-top: 21px;
+  padding-bottom: 42px;
 }
 .reviews__header {
   margin: 0;
@@ -14,8 +16,8 @@
   line-height: 2;
   color: $txt-color;
   margin: 0;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 11px;
 }
 .review__cite {
   font-family: inherit;
@@ -25,15 +27,15 @@
   font-weight: bold;
 }
 .review__cite-address {
+  display: inline-block;
   font-size: 17px;
   line-height: 1.8;
   color: $txt-color;
   font-style: normal;
   text-decoration: none;
+  padding-top: 3px;
+  margin-bottom: 30px;
 }
-.slider__toggles {
-  margin-top: 36px;
-  margin-bottom: 38px;
-  border-top: 1px solid $bd-color;
-  border-bottom: 1px solid $bd-color;
+.reviews__btn {
+  margin-top: 38px;
 }

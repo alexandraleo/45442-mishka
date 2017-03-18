@@ -1,8 +1,11 @@
 .contacts {
   @mixin block;
+  padding-top: 37px;
+  padding-bottom: 40px
 }
 .contacts__header {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
   font-family: inherit;
   font-size: 18px;
   line-height: 1.7;
@@ -18,19 +21,30 @@
   line-height: 2;
   color: $txt-color;
   font-style: normal;
-  padding-top: 36px;
+  padding-top: 16px;
   padding-bottom: 36px;
 }
 .contacts__type {
   display: inline-flex;
-  width: 77px;
+  width: 29.6%;
+  padding-bottom: 30px;
 }
 .contacts__text {
-  width: calc(100% - 77px);
+  width: 70.4%;
 }
 .contacts__map {
+  position: relative;
   align-self: center;
-  margin-bottom: 39px;
+  margin-bottom: 35px;
+}
+.contacts__map::before {
+  content: "";
+  position: absolute;
+  top: 35.5%;
+  left: 38.5%;
+  width: 66px;
+  height: 101px;
+  background: transparent url("../img/icon-map-pin.svg") 0 0 no-repeat;
 }
 .contacts__mail {
   font-size: inherit;
@@ -41,4 +55,11 @@
   text-decoration: none;
   border-bottom: 1px solid $green-light;
   /*text-decoration-color: $green-light;*/  /*Не очень-то и работает*/
+}
+.contacts__mail:hover {
+  color: $green-light;
+}
+.contacts__mail:active {
+  color: rgba(70, 193, 174, 0.3);
+  border-bottom: 1px solid rgba(70, 193, 174, 0.3);
 }

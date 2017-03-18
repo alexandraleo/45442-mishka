@@ -1,0 +1,35 @@
+.slider__toggles {
+  display: flex;
+  width: 100%;
+  min-height: 52px;
+}
+.slider__toggle {
+  width: 50%;
+  position: relative;
+  border: none;
+  background-color: #fff;
+}
+.slider__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130px;
+  height: 52px;
+}
+.slider__toggle--left-arrow::before {
+  background: #fff url("../img/icon-left-arrow.svg") 50% 50% no-repeat;
+  border: 1px solid $bd-color;
+}
+.slider__toggle--right-arrow::before {
+  background: #fff url("../img/icon-right-arrow.svg") 50% 50% no-repeat;
+  border-right: 1px solid $bd-color;
+  border-top: 1px solid $bd-color;
+  border-bottom: 1px solid $bd-color;
+}
+.slider__toggle:hover::before {
+  opacity: 0.6;
+}
+.slider__toggle:active::before {
+  opacity: 0.3;
+}

@@ -1,0 +1,26 @@
+.logo {
+  min-height: 80px;
+  border-bottom: 1px solid $bd-color;
+  display: flex;
+  justify-content: center;
+  /*align-items: center;*/
+}
+.logo__link {
+  position: relative;
+}
+.logo__link::after {
+  content: "";
+  position: absolute;
+  width: 86px;
+  height: 35px;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/logo-mobile.svg");
+}
+.logo__link:hover::after {
+  opacity: 0.6;
+}
+.logo__link:active::after {
+  opacity: 0.3;
+}

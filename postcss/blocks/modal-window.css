@@ -1,5 +1,8 @@
 .modal-window {
-  display: flex;
+  display: none;
+  position: fixed;
+  top: 25vh;
+  z-index: 10;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
@@ -12,6 +15,9 @@
   background-color: #fff;
   border-top: 1px solid #c7c7c7;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.modal-window--opened {
+  display: flex;
 }
 .modal-window__header {
   margin: 0;
@@ -29,6 +35,7 @@
   color: $txt-color;
   padding-top: 20px;
   padding-bottom: 20px;
+  align-self: center;
 }
 .modal-window__form {
   width: 100%;
@@ -45,5 +52,23 @@
   padding-bottom: 18px;
   margin-top: 30px;
   border: 0;
-
+}
+.modal-window__option {
+  display: none;
+}
+.modal-window__label {
+  display: inline-block;
+  width: 82px;
+  height: 52px;
+  font-size: 17px;
+  line-height: 1;
+  color: $txt-color;
+  padding-top: 17px;
+  padding-bottom: 18px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  vertical-align: middle;
+}
+.modal-window__option:checked + .modal-window__label {
+  border: 2px solid $green-light;
 }

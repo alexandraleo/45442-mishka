@@ -6,7 +6,6 @@
   background-color: #fff;
   color: #000;
   font-family: inherit;
-  padding-bottom: 55px;
 }
 .page-main__desc {
   font-family: inherit;
@@ -16,5 +15,12 @@
   padding-left: 30px;
   padding-right: 30px;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 24px;
+}
+.page-main__video {
+  margin-top: 31px;
+  margin-bottom: 58px;
+}
+.page-main__form {
+  margin-bottom: 57px;
 }
