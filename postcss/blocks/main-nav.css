@@ -48,15 +48,16 @@
   padding-left: 45px;
   padding-top: 27px;
   padding-bottom: 28px;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 .main-nav__icon-link {
   padding-left: 27px;
-}
-.main-nav__link:hover {
-    color: rgba(0, 0, 0, 0.6);
-  }
-.main-nav__link:active {
-    color: rgba(0, 0, 0, 0.3);
 }
 .main-nav__btn {
   position: absolute;
@@ -67,8 +68,14 @@
   transform: translate(0, -50%);
   background-color: #fff;
   border: none;
-  /*outline: none;*/
 }
+/*.main-nav__btn {
+  width: 21px;
+  height: 20px;
+  transform: translate(0, -50%);
+  background-color: #fff;
+  border: none;
+}*/
 .main-nav__btn--open {
   background: #fff url("../img/icon-menu-open.svg") 0 2px no-repeat;
 }

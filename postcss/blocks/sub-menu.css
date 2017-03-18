@@ -1,10 +1,12 @@
 .sub-menu {
+  @mixin block;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 19px;
   line-height: 1.26;
   color: #ffffff;
   @mixin reset-list;
+  margin: 0 auto;
 }
 .sub-menu__item {
   background-color: $green-light;

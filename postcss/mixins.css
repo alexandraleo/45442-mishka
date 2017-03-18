@@ -5,9 +5,14 @@
   align-items: stretch;
   background-color: #fff;
   color: #000;
+  max-width: 320px;
+  margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
-  /*font-family: $font;*/
+}
+@define-mixin container {
+  width: 320px;
+  margin: 0 auto;
 }
 @define-mixin reset-list {
   margin: 0;

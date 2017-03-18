@@ -7,6 +7,7 @@
   font-family: inherit;
   background-color: $grey;
   color: #000;
+  @mixin container;
   padding: 0 30px;
 }
 .page-footer__socials {

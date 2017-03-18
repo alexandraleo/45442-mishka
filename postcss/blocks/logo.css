@@ -3,24 +3,21 @@
   border-bottom: 1px solid $bd-color;
   display: flex;
   justify-content: center;
-  /*align-items: center;*/
+  align-items: stretch;
+}
+.logo img {
+  width: 86px;
+  height: 36px;
 }
 .logo__link {
-  position: relative;
-}
-.logo__link::after {
-  content: "";
-  position: absolute;
-  width: 86px;
-  height: 35px;
-  top: 50%;
-  left: 0;
-  transform: translate(-50%, -50%);
-  background-image: url("../img/logo-mobile.svg");
-}
-.logo__link:hover::after {
-  opacity: 0.6;
-}
-.logo__link:active::after {
-  opacity: 0.3;
+  padding-top: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
