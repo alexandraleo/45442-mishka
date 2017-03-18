@@ -49,6 +49,7 @@
   border-bottom: 1px solid #ececec;
 }
 .special-item__price {
+  display: block;
   align-self: center;
   margin-top: 24px;
   margin-bottom: 27px;

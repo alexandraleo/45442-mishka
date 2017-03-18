@@ -1,4 +1,5 @@
 .btn {
+  display: block;
   background-color: #fff;
   font-family: inherit;
   color: $txt-color;
