@@ -9,6 +9,7 @@
   @mixin reset-list;
   margin: 0 auto;
   /*overflow: hidden;*/
+  background-color: $bg-grey;
 }
 .sub-menu__item {
   background-color: $green-light;
@@ -70,11 +71,37 @@
 @media (min-width: $tablet-width)  {
   .sub-menu {
     flex-direction: row;
+    font-size: 20px;
+    line-height: 1.5;
   }
   .sub-menu__item {
     width: 50%
   }
+  .sub-menu__item-link {
+    padding-right: 140px;
+    padding-left: 37px;
+    padding-top: 27px;
+    padding-bottom: 35px;
+  }
+  .sub-menu__item-link--interior::after {
+    background-position: 19px 5px;
+  }
+  .sub-menu__item-link--toy::after {
+    background-position: 2px 5px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .sub-menu__item-link {
+    padding-right: 350px;;
+    padding-left: 37px;
+    padding-top: 27px;
+    padding-bottom: 35px;
+  }
+  .sub-menu__item-link--interior::after {
+    background-position: 19px 5px;
+  }
+  .sub-menu__item-link--toy::after {
+    background-position: 2px 5px;
+  }
 }
