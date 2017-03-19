@@ -60,7 +60,6 @@
 .sub-menu__item:hover {
   transform: translate(0, -5px);
   background-color: #59d5bc;
-
 }
 
 .sub-menu__item-link:active {

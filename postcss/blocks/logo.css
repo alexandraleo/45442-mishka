@@ -35,4 +35,7 @@
 }
 
 @media (min-width: $desktop-width) {
+  .logo {
+    order: 2;
+  }
 }
