@@ -1,5 +1,4 @@
 .sub-menu {
-  @mixin content-container;
   @mixin block;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: bold;
@@ -7,8 +6,7 @@
   line-height: 1.26;
   color: #ffffff;
   @mixin reset-list;
-  margin: 0 auto;
-  /*overflow: hidden;*/
+  overflow: hidden;
   background-color: $bg-grey;
 }
 .sub-menu__item {
@@ -70,6 +68,7 @@
 
 @media (min-width: $tablet-width)  {
   .sub-menu {
+    @mixin content-container;
     flex-direction: row;
     font-size: 20px;
     line-height: 1.5;

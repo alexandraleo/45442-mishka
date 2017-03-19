@@ -1,5 +1,5 @@
 .page-main {
-  @mixin container;
+  @mixin content-container;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -27,11 +27,11 @@
   margin-bottom: 57px;
 }
 
-@media (min-width: $tablet-width)  {
+/*@media (min-width: $tablet-width)  {
 
 
 }
 
 @media (min-width: $desktop-width) {
 
-}
+}*/

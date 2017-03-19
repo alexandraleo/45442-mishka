@@ -3,6 +3,7 @@
   background-color: $body-bg;
   @mixin container;
   background-color: #f9f9f9;
+  padding-top: -5px;
 }
 .page-header__title {
   width: 100%;
