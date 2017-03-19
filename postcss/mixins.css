@@ -15,14 +15,26 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width)  {
-    width: 668px;
+    width: 768px;
   }
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+  }
+}
+@define-mixin content-container {
+  width: 320px;
+  margin: 0 auto;
 
+  @media (min-width: $tablet-width)  {
+    box-sizing: content-box;
+    width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
   @media (min-width: $desktop-width) {
     width: 1050px;
   }
 }
-
 @define-mixin reset-list {
   margin: 0;
   padding: 0;

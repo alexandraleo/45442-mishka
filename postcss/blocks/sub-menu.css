@@ -1,4 +1,5 @@
 .sub-menu {
+  @mixin content-container;
   @mixin block;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: bold;
