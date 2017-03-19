@@ -31,7 +31,28 @@
   .main-nav__items-links {
     margin-left: auto;
   }
+  .page-header__title {
+    font-size: 43px;
+    line-height: 1.16;
+  }
+  .page-header__title--main {
+    padding-top: 92px;
+    padding-left: 10px;
+    padding-right: 2px;
+    padding-bottom: 375px;
+    background-color: $bg-grey;
+    background-size: cover;
+  }
 }
 @media (min-width: $desktop-width) {
-  /*width: 1050px;*/
+  .page-header__title {
+    font-size: 53px;
+    line-height: 1.08;
+  }
+  .page-header__title--main {
+    padding-top: 92px;
+    padding-bottom: 359px;
+    background-color: $bg-grey;
+    background-size: cover;
+  }
 }
