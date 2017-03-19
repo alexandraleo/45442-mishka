@@ -1,6 +1,7 @@
 .reviews {
   @mixin block;
-  padding-top: 21px;
+  @mixin content-container;
+  padding-top: 9px;
   padding-bottom: 42px;
 }
 .reviews__header {
@@ -16,8 +17,8 @@
   line-height: 2;
   color: $txt-color;
   margin: 0;
-  padding-top: 10px;
-  padding-bottom: 11px;
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
 .review__cite {
   font-family: inherit;
@@ -27,15 +28,70 @@
   font-weight: bold;
 }
 .review__cite-address {
-  display: inline-block;
+  display: block;
   font-size: 17px;
   line-height: 1.8;
   color: $txt-color;
   font-style: normal;
   text-decoration: none;
-  padding-top: 3px;
-  margin-bottom: 30px;
+  margin-top: 5px;
+  margin-bottom: 28px;
 }
 .reviews__btn {
   margin-top: 38px;
+}
+@media (min-width: $tablet-width)  {
+  .reviews {
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #fff url("../img/review@1x.jpg") 0 10px no-repeat;
+    margin-bottom: 50px;
+  }
+  .reviews__header {
+    width: 490px;
+    font-size: 43px;
+    line-height: 1.16;
+    margin-top: 77px;
+    margin-bottom: 10px;
+  }
+  .reviews__btn {
+    position: absolute;
+    width: 170px;
+    top: 50px;
+    right: 50px;
+  }
+  .review__cite {
+    display: block;
+    font-size: 17px;
+    line-height: 1.765;
+    margin-top: 54px;
+    /*width: 334px;*/
+  }
+  .review__cite-address {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    background-position: 50px 15px;
+    padding-bottom: 67px;
+    margin-bottom: 75px;
+  }
+  .review {
+    padding-left: 175px;
+  }
+  .reviews__header {
+    font-size: 53px;
+    line-height: 1.075;
+    padding-left: 172px;
+  }
+  .reviews__btn {
+    top: 56px;
+  }
+  .review__cite {
+    margin-top: 35px;
+  }
 }

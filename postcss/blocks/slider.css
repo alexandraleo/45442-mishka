@@ -16,20 +16,41 @@
   left: 0;
   width: 130px;
   height: 52px;
-}
-.slider__toggle--left-arrow::before {
-  background: #fff url("../img/icon-left-arrow.svg") 50% 50% no-repeat;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   border: 1px solid $bd-color;
 }
+.slider__toggle--left-arrow::before {
+  background-image: url("../img/icon-left-arrow.svg");
+}
 .slider__toggle--right-arrow::before {
-  background: #fff url("../img/icon-right-arrow.svg") 50% 50% no-repeat;
-  border-right: 1px solid $bd-color;
-  border-top: 1px solid $bd-color;
-  border-bottom: 1px solid $bd-color;
+  background-image: url("../img/icon-right-arrow.svg");
 }
 .slider__toggle:hover::before {
   opacity: 0.6;
 }
 .slider__toggle:active::before {
   opacity: 0.3;
+}
+@media (min-width: $tablet-width)  {
+  .slider__item {
+    margin-top: 40px;
+  }
+  .slider__toggles {
+    position: absolute;
+    bottom: 72px;
+    right: 53px;
+    width: 168px;
+  }
+  .slider__toggle::before {
+    border: none;
+    width: 85px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .slider__toggles {
+    bottom: 98px;
+    right: 55px;
+  }
 }
