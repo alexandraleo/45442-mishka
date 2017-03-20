@@ -4,7 +4,9 @@
   border-bottom: 7px solid $grey;
 }
 @media (min-width: $tablet-width)  {
-
+  .separator {
+        border-bottom: 17px solid $grey;
+  }
 }
 @media (min-width: $desktop-width) {
   .separator {

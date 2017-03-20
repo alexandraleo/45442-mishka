@@ -42,15 +42,17 @@
 }
 @media (min-width: $tablet-width)  {
   .reviews {
+    @mixin padding-20;
     position: relative;
     flex-direction: row;
     flex-wrap: wrap;
     background: #fff url("../img/review@1x.jpg") 0 10px no-repeat;
-    margin-bottom: 50px;
+    margin-top: 13px;
+    margin-bottom: 67px;
   }
   .reviews__header {
     @mixin tablet-header;
-    margin-top: 77px;
+    margin-top: 67px;
     margin-bottom: 10px;
   }
   .reviews__btn {
@@ -83,7 +85,7 @@
   }
   .reviews__header {
     @mixin desktop-header;
-    margin-top: 65px;
+    margin-top: 67px;
     margin-left: 172px;
   }
   .reviews__btn {

@@ -39,6 +39,7 @@
     flex-direction: row;
     align-items: center;
     min-height: 145px;
+    margin-top: 20px;
   }
   .page-footer__logo {
     display: block;
@@ -55,6 +56,10 @@
     margin-right: 28px;
   }
 }
-@media (min-width: $desktop-width) {
 
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    margin-top: 0px;
+  }
 }

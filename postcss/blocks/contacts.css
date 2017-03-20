@@ -65,11 +65,16 @@
   border-bottom: 1px solid rgba(70, 193, 174, 0.3);
 }
 @media (min-width: $tablet-width)  {
+  .contacts {
+    @mixin padding-20;
+  }
   .contacts__header {
     position: relative;
     @mixin tablet-header;
-    padding-top: 26px;
-    padding-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background: #fff url("../img/icon-flag.svg") right 50% no-repeat;
   }
   .contacts__address {
