@@ -217,4 +217,7 @@
     padding-bottom: 20px;
     padding-right: 62px;
   }
+  .main-nav__user-links  .main-nav__link-text {
+    padding-left: 28px;
+  }
 }

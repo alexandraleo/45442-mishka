@@ -3,3 +3,11 @@
   /*width: 100%;*/
   border-bottom: 7px solid $grey;
 }
+@media (min-width: $tablet-width)  {
+
+}
+@media (min-width: $desktop-width) {
+  .separator {
+    border-bottom: 23px solid $grey;
+  }
+}

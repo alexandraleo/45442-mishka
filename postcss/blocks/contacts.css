@@ -1,6 +1,7 @@
 .contacts {
   @mixin block;
-  padding-top: 37px;
+  @mixin content-container;
+  padding-top: 39px;
   padding-bottom: 40px
 }
 .contacts__header {
@@ -21,8 +22,8 @@
   line-height: 2;
   color: $txt-color;
   font-style: normal;
-  padding-top: 16px;
-  padding-bottom: 36px;
+  margin-top: 16px;
+  margin-bottom: 36px;
 }
 .contacts__type {
   display: inline-flex;
@@ -35,7 +36,7 @@
 .contacts__map {
   position: relative;
   align-self: center;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 }
 .contacts__map::before {
   content: "";
@@ -62,4 +63,36 @@
 .contacts__mail:active {
   color: rgba(70, 193, 174, 0.3);
   border-bottom: 1px solid rgba(70, 193, 174, 0.3);
+}
+@media (min-width: $tablet-width)  {
+  .contacts__header {
+    position: relative;
+    @mixin tablet-header;
+    padding-top: 26px;
+    padding-bottom: 30px;
+    background: #fff url("../img/icon-flag.svg") right 50% no-repeat;
+  }
+  .contacts__address {
+    flex-wrap: nowrap;
+    font-size: 17px;
+    line-height: 1.765;
+    margin-top: 11px;
+    margin-bottom: 55px;
+  }
+  .contacts__type {
+    width: 21%;
+  }
+  .contacts__map {
+    margin-bottom: 51px;
+  }
+  .contacts__btn {
+    width: 230px;
+    align-self: center;
+  }
+}
+@media (min-width: $desktop-width) {
+  .contacts__header {
+    @mixin desktop-header;
+  }
+
 }

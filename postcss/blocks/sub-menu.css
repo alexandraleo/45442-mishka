@@ -35,7 +35,7 @@
   height: 70px;
 }
 .sub-menu__item-link--interior::after {
-  background: transparent url("../img/icon-interior.svg") 19px 7px no-repeat;
+  background: transparent url("../img/icon-interior.svg") 19px 6px no-repeat;
   opacity: 0.5;
 }
 .sub-menu__item-link--toy::after {

@@ -51,3 +51,15 @@
   clip: rect(0,0,0,0);
   overflow: hidden;
 }
+@define-mixin tablet-header {
+  font-size: 43px;
+  line-height: 1.16;
+}
+@define-mixin desktop-header {
+  font-size: 53px;
+  line-height: 1.075;
+}
+@define-mixin padding-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

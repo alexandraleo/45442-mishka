@@ -68,8 +68,7 @@
   }
   .advantages__header {
     width: 100%;
-    font-size: 43px;
-    line-height: 1.16;
+    @mixin tablet-header;
     padding-top: 27px;
     padding-bottom: 5px;
   }
@@ -92,8 +91,7 @@
 @media (min-width: $desktop-width) {
   .advantages__header {
     width: 100%;
-    font-size: 53px;
-    line-height: 1.075;
+    @mixin desktop-header;
     padding-top: 42px;
     padding-left: 170px;
     padding-bottom: 5px;

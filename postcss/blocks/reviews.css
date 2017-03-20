@@ -49,9 +49,7 @@
     margin-bottom: 50px;
   }
   .reviews__header {
-    width: 490px;
-    font-size: 43px;
-    line-height: 1.16;
+    @mixin tablet-header;
     margin-top: 77px;
     margin-bottom: 10px;
   }
@@ -66,7 +64,6 @@
     font-size: 17px;
     line-height: 1.765;
     margin-top: 54px;
-    /*width: 334px;*/
   }
   .review__cite-address {
     display: block;
@@ -84,8 +81,7 @@
     padding-left: 175px;
   }
   .reviews__header {
-    font-size: 53px;
-    line-height: 1.075;
+    @mixin desktop-header;
     padding-left: 172px;
   }
   .reviews__btn {
