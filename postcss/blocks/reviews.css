@@ -73,16 +73,18 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
+    @mixin padding-20;
     background-position: 50px 15px;
-    padding-bottom: 67px;
-    margin-bottom: 75px;
+    margin-bottom: 70px;
   }
   .review {
-    padding-left: 175px;
+    margin-left: 175px;
+    margin-bottom: 75px;
   }
   .reviews__header {
     @mixin desktop-header;
-    padding-left: 172px;
+    margin-top: 65px;
+    margin-left: 172px;
   }
   .reviews__btn {
     top: 56px;
