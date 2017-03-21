@@ -1,6 +1,6 @@
 .separator {
-  @mixin container;
-  /*width: 100%;*/
+  /*@mixin container;*/
+  width: 100%;
   border-bottom: 7px solid $grey;
 }
 @media (min-width: $tablet-width)  {

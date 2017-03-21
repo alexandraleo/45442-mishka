@@ -1,11 +1,10 @@
 .contacts {
   @mixin block;
-  @mixin content-container;
-  padding-top: 39px;
-  padding-bottom: 40px
+  @mixin padding-lr-30;
+  @mixin padding-20;
 }
 .contacts__header {
-  margin-top: 0;
+  margin-top: 5px;
   margin-bottom: 10px;
   font-family: inherit;
   font-size: 18px;
@@ -66,12 +65,13 @@
 }
 @media (min-width: $tablet-width)  {
   .contacts {
-    @mixin padding-20;
+    @mixin padding-lr-50;
+    /*@mixin padding-20;*/
   }
   .contacts__header {
     position: relative;
     @mixin tablet-header;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -94,16 +94,16 @@
     width: 230px;
     align-self: center;
   }
-  .contacts {
+  /*.contacts {
     margin-bottom: 18px;
-  }
+  }*/
 }
 @media (min-width: $desktop-width) {
   .contacts {
-    @mixin padding-20;
+    /*@mixin padding-20;*/
     flex-wrap: wrap;
     height: 550px;
-    margin-bottom: 41px;
+    /*margin-bottom: 41px;*/
   }
   .contacts__header {
     @mixin desktop-header;
