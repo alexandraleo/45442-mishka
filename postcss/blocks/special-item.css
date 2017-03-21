@@ -1,8 +1,6 @@
 .special-item {
   @mixin block;
-  @mixin content-container;
-  padding-top: 27px;
-  padding-bottom: 35px;
+  @mixin padding-20;
 }
 .special-item__title {
   font-size: 25px;
@@ -32,9 +30,10 @@
   font-size: 15px;
   line-height: 1.612;
   font-weight: normal;
-  padding-top: 24px;
-  padding-bottom: 10px;
-  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 18px;
+  margin-bottom: 5px;
 }
 .special-item__info {
   width: 100%;
@@ -58,8 +57,8 @@
 .special-item__price {
   display: block;
   align-self: center;
-  padding-top: 24px;
-  padding-bottom: 27px;
+  margin-top: 24px;
+  margin-bottom: 27px;
   font-family: inherit;
   font-size: 17px;
   line-height: 1.4;
@@ -67,13 +66,6 @@
   font-weight: bold;
 }
 @media (min-width: $tablet-width)  {
-  .special-item {
-    @mixin padding-20;
-    margin-top: 18px;
-    margin-bottom: 32px;
-    /*padding-top: 38px;
-    padding-bottom: 57px;*/
-  }
   .special-item__header {
     display: flex;
     flex-grow: 1;
@@ -118,18 +110,13 @@
   .special-item__price {
     font-size: 20px;
     line-height: 1.2;
-    padding-top: 28px;
+    margin-top: 28px;
+    margin-bottom: 34px;
     padding-left: 5px;
-    padding-bottom: 34px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .special-item {
-    z-index: 0;
-    @mixin padding-20;
-    margin-bottom: 55px
-  }
   .special-item__header {
     justify-content: flex-start;
     align-items: stretch;

@@ -1,5 +1,5 @@
 .page-main {
-  /*@mixin content-container;*/
+  @mixin content-container;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -27,11 +27,22 @@
   margin-bottom: 57px;
 }
 
-/*@media (min-width: $tablet-width)  {
+.page-main__special {
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
 
+@media (min-width: $tablet-width)  {
+  .page-main__special {
+    margin-top: 18px;
+    margin-bottom: 32px;
+  }
 
 }
 
 @media (min-width: $desktop-width) {
-
-}*/
+  .page-main__special {
+    z-index: 0;
+    margin-bottom: 55px
+  }
+}

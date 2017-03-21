@@ -5,7 +5,7 @@
   align-items: stretch;
   background-color: #fff;
   color: #000;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
 }
 @define-mixin container {
   width: 320px;
