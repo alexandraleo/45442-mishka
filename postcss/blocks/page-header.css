@@ -33,8 +33,10 @@
     margin-left: auto;
   }
   .page-header__title {
-    font-size: 43px;
-    line-height: 1.16;
+    @mixin tablet-header;
+    padding-top: 34px;
+    /*padding-right: 5px;*/
+    padding-left: 40px;
 
     &--main {
       padding-top: 92px;
@@ -48,8 +50,10 @@
 }
 @media (min-width: $desktop-width) {
   .page-header__title {
-    font-size: 53px;
-    line-height: 1.08;
+    @mixin desktop-header;
+    padding-top: 33px;
+    padding-left: 34px;
+    padding-bottom: 85px;
 
     &--main {
       padding-top: 92px;
