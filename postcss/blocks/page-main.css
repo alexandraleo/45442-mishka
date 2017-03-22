@@ -18,9 +18,9 @@
   margin: 0;
   padding-top: 24px;
 }
-.page-main__video {
-  margin-top: 31px;
-  margin-bottom: 58px;
+.page-main__video-review {
+  /*margin-top: 31px;
+  margin-bottom: 58px;*/
 }
 .page-main__form {
   margin-bottom: 57px;
@@ -39,6 +39,14 @@
 .page-main__contacts {
   margin-top: 12px;
   margin-bottom: 20px;
+}
+.page-main__catalog {
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+.page-main__video-review {
+  margin-top: 5px;
+  margin-bottom: 58px;
 }
 @media (min-width: $tablet-width)  {
   .page-main__special {

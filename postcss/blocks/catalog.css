@@ -1,6 +1,7 @@
 .catalog {
   @mixin block;
-  padding-top: 32px;
+  @mixin padding-20;
+  @mixin padding-lr-30;
 }
 .catalog__items {
   display: flex;
