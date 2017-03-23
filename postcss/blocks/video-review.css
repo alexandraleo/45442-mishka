@@ -6,7 +6,7 @@
 }
 
 .video-review__wrap {
-  @mixin padding-20;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -21,8 +21,8 @@
   padding-right: 34px;
   margin-top: 3px;
   margin-bottom: 26px;
+  order: 1;
 }
-
 .video-review__header {
   font-size: 17px;
   line-height: 1.4;
@@ -30,26 +30,32 @@
   color: #000;
   margin: 0;
   margin-left: 22px;
-
 }
 .video-review__header-icon--icon-video {
   flex-shrink: 0;
   margin-top: 6px;
   margin-left: 4px;
 }
+.video-review__video {
+  order: 2;
+}
+.video-review__desc-wrap {
+  order: 3;
+  padding-left: 34px;
+  padding-right: 34px;
+  padding-top: 22px;
+  padding-bottom: 25px;
+}
 .video-review__desc {
   font-size: 13px;
   line-height: 1.85;
   color: $txt-color;
-  margin-top: 22px;
-  margin-bottom: 25px;
-  padding-left: 34px;
-  padding-right: 34px;
 }
 .video-review__btn {
   width: 192px;
-  margin-left: 4px;
-  margin-bottom: 12px;
+  margin-left: 2px;
+  margin-top: 49px;
+  margin-bottom: 7px;
 }
 @media (min-width: $tablet-width)  {
   .video-review {
@@ -59,7 +65,7 @@
     padding-top: 0;
   }
   .video-review__video {
-    order: 1;
+    order: 0;
     width: 668px;
     height: 455px;
     outline: 1px solid blue;
@@ -68,14 +74,10 @@
     font-size: 20px;
     line-height: 1.2;
   }
-  .video-review__desc-wrap {
-    order: 3;
-  }
   .video-review__desc {
-
     font-size: 15px;
     line-height: 2;
-    padding-left: 40px;
+    /*margin-left: 6px;*/
     margin-bottom: 35px;
   }
   .video-review__header-wrap {
@@ -83,7 +85,6 @@
     margin-top: 34px;
     margin-bottom: 8px;
     padding-left: 110px;
-    order: 2;
   }
   .video-review__header {
     margin-top: 5px;
@@ -93,9 +94,13 @@
     margin-top: 0;
   }
   .video-review__btn {
-    width: 87%;
-    margin-bottom: 24px;
-    order: 4;
+    width: 100%;
+    margin-top: 34px;
+    margin-bottom: 20px;
+  }
+  .video-review__desc-wrap {
+    padding-left: 40px;
+    padding-right: 45px;
   }
 }
 @media (min-width: $desktop-width) {
