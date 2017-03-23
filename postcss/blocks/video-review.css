@@ -99,30 +99,36 @@
   }
 }
 @media (min-width: $desktop-width) {
-  /*.video-review__wrap {
-    flex-direction: row;
+  .video-review__wrap {
+    /*flex-direction: row;*/
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
-  }*/
-  /*.video-review__video {
-    order: 3;
+    min-height: 455px;
+  }
+  .video-review__video {
+    order: 1;
     width: 682px;
-    margin-left: -970px;
-    margin-right: 78px;
-  }*/
-  /*.video-review__header-wrap {
+    /*margin-left: -970px;*/
+    /*margin-right: 78px;*/
+  }
+  .video-review__header-wrap {
     padding-left: 0;
     flex-direction: column;
-    margin-bottom: 465px;
-        margin-left: 682px;
-  }*/
+    /*width: 350px;*/
+    margin-left: 692px;
+    margin-top: -455px;
+    /*margin-left: 682px;*/
+  }
 
-  /*.video-review__desc-wrap {
+  .video-review__desc-wrap {
     display: flex;
     flex-direction: column;
     order: 2;
-    margin-top: -455px;
+    width: 350px;
+    margin-top: auto;
+    margin-bottom: auto;
     margin-left: 692px;
-    height: 455px;
-  }*/
+    /*height: 455px;*/
+  }
 }
