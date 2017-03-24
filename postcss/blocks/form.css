@@ -1,9 +1,11 @@
 .form {
   @mixin block;
+  @mixin padding-lr-30;
   padding-top: 32px;
   padding-bottom: 56px;
 }
 .form__form-group {
+    /*@mixin container;*/
   position: relative;
   margin: 0;
   padding: 0;
@@ -194,4 +196,12 @@
   color: $txt-color;
   margin-top: 0px;
   margin-bottom: 30px;
+}
+@media (min-width: $tablet-width)  {
+  .form {
+    @mixin padding-lr-50;
+  }
+}
+@media (min-width: $desktop-width) {
+
 }

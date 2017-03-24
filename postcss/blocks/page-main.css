@@ -68,6 +68,11 @@
   .page-main__video-review .video-review__wrap {
     margin-bottom: 65px;
   }
+  .page-main__desc {
+    @mixin padding-lr-50;
+    font-size: 17px;
+    line-height: 1.765;
+  }
 }
 
 @media (min-width: $desktop-width) {
