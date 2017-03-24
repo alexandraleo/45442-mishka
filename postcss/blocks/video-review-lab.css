@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: stretch;
+  align-items: center;
   border: 1px solid $bd-color;
 }
 
@@ -68,7 +68,7 @@
     order: 0;
     width: 668px;
     height: 455px;
-    outline: 1px solid red;
+    outline: 1px solid blue;
   }
   .video-review__header {
     font-size: 20px;
@@ -77,6 +77,7 @@
   .video-review__desc {
     font-size: 15px;
     line-height: 2;
+    /*margin-left: 6px;*/
     margin-bottom: 35px;
   }
   .video-review__header-wrap {
@@ -104,20 +105,18 @@
 }
 @media (min-width: $desktop-width) {
   .video-review__wrap {
-    flex-direction: row;
-    /*flex-direction: column;*/
+    /*flex-direction: row;*/
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    /*align-content: flex-start;*/
-    /*height: 455px;*/
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 455px;
   }
   .video-review__video {
-    order: 2;
+    /*order: 1;*/
     width: 682px;
-    margin-top: -175px;
-    outline: 1px solid blue;
-    /*margin-right: 18px;*/
+    margin-right: 18px;
     /*margin-right: 20px;*/
     /*margin-left: -970px;*/
     /*margin-right: 78px;*/
@@ -128,12 +127,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 760px;
-    /*width: 350px;*/
+    width: 350px;
     margin-top: 41px;
-    /*padding-left: 58px;*/
+    padding-left: 58px;
     padding-right: 100px;
-    margin-bottom: 32px;
+    /*margin-bottom: 30px;*/
   }
   .video-review__header {
     margin-left: 2px;
@@ -146,21 +144,17 @@
     justify-content: flex-start;
     align-items: flex-start;
     width: 350px;
-    /*margin-left: 20px;*/
     padding-top: 0;
-    padding-left: 78px;
+    padding-left: 58px;
     overflow-y: hidden;
   }
   .video-review__desc {
-    margin-bottom: 47px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
-
   .video-review__btn {
     width: 230px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  .video-review__header-icon--icon-video {
-    margin-left: 0;
+    margin-top: 46px;
+    margin-bottom: 36px;
   }
 }
