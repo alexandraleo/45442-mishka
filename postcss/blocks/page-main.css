@@ -104,4 +104,9 @@
   .page-main__video-review {
     margin-bottom: 103px;
   }
+  .page-main__desc {
+    padding-left: 225px;
+    padding-right: 225px;
+    margin-top: 140px;
+  }
 }
