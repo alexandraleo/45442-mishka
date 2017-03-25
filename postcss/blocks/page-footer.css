@@ -59,7 +59,7 @@
 
 
 @media (min-width: $desktop-width) {
-  .page-footer {
+  /*.page-footer {
     margin-top: 0px;
-  }
+  }*/
 }

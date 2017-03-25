@@ -29,9 +29,9 @@
 .page-main__advantages {
   margin-top: 7px;
 }
-.page-main__reviews {
-  /*margin-top: -12px;*/
-}
+/*.page-main__reviews {
+  margin-top: -12px;
+}*/
 .page-main__contacts {
   margin-top: 12px;
   margin-bottom: 20px;
@@ -42,7 +42,7 @@
 }
 .page-main__video-review {
   margin-top: 6px;
-  margin-bottom: 58px;
+  margin-bottom: 57px;
 }
 @media (min-width: $tablet-width)  {
   .page-main__special {
@@ -63,10 +63,11 @@
   }
   .page-main__catalog {
     margin-top: 65px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
-  .page-main__video-review .video-review__wrap {
-    margin-bottom: 65px;
+  .page-main__video-review {
+    margin-top: 10px;
+    margin-bottom: 63px;
   }
   .page-main__desc {
     @mixin padding-lr-50;
@@ -94,6 +95,9 @@
   }
   .page-main__catalog {
     margin-top: 127px;
-    margin-bottom: 37px;
+    margin-bottom: 27px;
+  }
+  .page-main__video-review {
+    margin-bottom: 103px;
   }
 }
