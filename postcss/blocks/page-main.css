@@ -13,15 +13,16 @@
   font-size: 13px;
   line-height: 1.85;
   color: $txt-color;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin: 0;
-  padding-top: 24px;
+  @mixin padding-lr-30;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  /*padding-top: 5px;
+  padding-bottom: 5px;*/
 }
 .page-main__form {
-  margin-bottom: 57px;
+  margin-top: 4px;
+  margin-bottom: 36px;
 }
-
 .page-main__special {
   margin-top: 8px;
   margin-bottom: 15px;
@@ -29,9 +30,6 @@
 .page-main__advantages {
   margin-top: 7px;
 }
-/*.page-main__reviews {
-  margin-top: -12px;
-}*/
 .page-main__contacts {
   margin-top: 12px;
   margin-bottom: 20px;

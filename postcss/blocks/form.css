@@ -1,11 +1,9 @@
 .form {
   @mixin block;
   @mixin padding-lr-30;
-  padding-top: 32px;
-  padding-bottom: 56px;
+  @mixin padding-20;
 }
 .form__form-group {
-    /*@mixin container;*/
   position: relative;
   margin: 0;
   padding: 0;
@@ -53,35 +51,37 @@
 }
 .form__option-label--radio {
   position: relative;
-}
-.form__option-label--radio::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 1px;
-  width: 38px;
-  height: 38px;
-  border: 10px solid #fff;
-  box-shadow: 0px 0px 0 1px #000;
-  border-radius: 50%;
-  background-color: #fff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 1px;
+    width: 38px;
+    height: 38px;
+    border: 10px solid #fff;
+    box-shadow: 0px 0px 0 1px #000;
+    border-radius: 50%;
+    background-color: #fff;
+  }
 }
 .form__option:checked + .form__option-label--radio::before {
-    background-color: $green-light;
+  background-color: $green-light;
 }
 .form__option-label--checkbox {
   position: relative;
   margin-bottom: -1px;
-}
-.form__option-label--checkbox::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 39px;
-  border: 2px solid #000;
-  background-color: #fff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 39px;
+    border: 2px solid #000;
+    background-color: #fff;
+  }
 }
 .form__option:checked + .form__option-label--checkbox::before {
   background: #fff url("../img/icon-tick.svg") 50% 50% no-repeat;
@@ -98,6 +98,7 @@
 .form__option-label--checkbox:active::before {
   border-color: #c7c7c7;
 }
+
 .form__checkbox-group {
   padding-top: 33px;
   padding-bottom: 17px;
@@ -125,20 +126,22 @@
   padding-top: 11px;
   padding-bottom: 15px;
   margin-bottom: 20px;
-}
-.form__text:hover {
-  border-bottom: 2px solid #62d1ba;
-}
-.form__text:active,
-.form__text:focus {
-  color: $txt-color;
-  border-bottom: 2px solid #62d1ba;
+
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
+  &:active,
+  &:focus {
+    color: $txt-color;
+    border-bottom: 2px solid #62d1ba;
+  }
 }
 .form__phone-group {
   padding-top: 14px;
   padding-bottom: 38px;
 }
 .form__contacts-option {
+  position: relative;
   font-family: inherit;
   width: 100%;
   border: none;
@@ -149,14 +152,31 @@
   padding-top: 10px;
   padding-bottom: 15px;
   padding-right: 40px;
+
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
+  &:active,
+  &:focus {
+    color: $txt-color;
+    border-bottom: 2px solid #62d1ba;
+  }
 }
-.form__contacts-option:hover {
-  border-bottom: 2px solid #62d1ba;
+.form__contacts-icon {
+  position: absolute;
+  transform: translate(0, 50%);
 }
-.form__contacts-option:active,
-.form__contacts-option:focus {
-  color: $txt-color;
-  border-bottom: 2px solid #62d1ba;
+.form__contacts-icon--icon-phone {
+  top: 11px;
+  right: 7px;
+  width: 25px;
+  height: 24px;
+}
+.form__contacts-icon--icon-mail {
+  top: 10px;
+  right: 3px;
+  width: 32px;
+  height: 32px;
 }
 .form__mail-group {
   padding-top: 16px;
@@ -174,8 +194,7 @@
   background-color: #fff;
   border: 2px solid #000;
   margin-top: 2px;
-  padding-left: 15px;
-  padding-bottom: 0;
+  padding: 15px;
   margin-bottom: 0;
   white-space: normal;
 
