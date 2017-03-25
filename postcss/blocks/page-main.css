@@ -74,10 +74,10 @@
     margin-top: 78px;
     /*margin-bottom: 30px;*/
   }
-  /*.page-main__form {
-    margin-top: 5px;
-    margin-bottom: 36px;
-  }*/
+  .page-main__form {
+    /*margin-top: 5px;*/
+    margin-bottom: 13px;
+  }
 }
 
 @media (min-width: $desktop-width) {
