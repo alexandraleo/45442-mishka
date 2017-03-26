@@ -199,6 +199,11 @@
 .form__mail-group > .form__group-name {
   min-width: 82px;
 }
+.form__text-group {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 16px;
+}
 .form__textarea {
   font-family: inherit;
   width: 260px;
@@ -221,9 +226,6 @@
     color: $txt-color;
     border: 2px solid #62d1ba;
   }
-}
-.form__text-group {
-  padding-bottom: 16px;
 }
 .form__notification {
   display: block;
@@ -316,6 +318,7 @@
     margin-bottom: 0;
   }
   .form__option-group {
+    width: 100%;
     display: flex;
     flex-direction: row;
     margin-top: 6px;
@@ -332,6 +335,7 @@
     padding-right: 27px;
   }
   .form__text {
+    width: 100%;
     font-size: 19px;
     padding-left: 15px;
     padding-top: 10px;
@@ -368,7 +372,7 @@
     padding-left: 218px;
   }
   .form__textarea {
-    max-width: 500px;
+    width: 500px;
     height: 142px;
     flex-grow: 0;
     margin-top: 7px;
@@ -423,8 +427,11 @@
   .form__text-group {
     padding-left: 226px;
   }
+  .form__text-group {
+    padding-right: 225px;
+  }
   .form__textarea {
-    max-width: 700px;
+    width: 700px;
   }
   .form__btn {
     align-self: flex-start;
