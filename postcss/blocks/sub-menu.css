@@ -1,13 +1,17 @@
 .sub-menu {
+  @mixin block;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 19px;
   line-height: 1.26;
   color: #ffffff;
   @mixin reset-list;
+  overflow: hidden;
+  background-color: $bg-grey;
 }
 .sub-menu__item {
   background-color: $green-light;
+  margin-bottom: -5px;
 }
 .sub-menu__item-link {
   position: relative;
@@ -19,7 +23,7 @@
   padding-right: 140px;
   padding-left: 29px;
   padding-top: 27px;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
 }
 .sub-menu__item-link::after {
   content: "";
@@ -31,7 +35,7 @@
   height: 70px;
 }
 .sub-menu__item-link--interior::after {
-  background: transparent url("../img/icon-interior.svg") 19px 7px no-repeat;
+  background: transparent url("../img/icon-interior.svg") 19px 6px no-repeat;
   opacity: 0.5;
 }
 .sub-menu__item-link--toy::after {
@@ -48,24 +52,55 @@
 }
 .sub-menu__item:nth-child(2n) {
   background-color: $green-dark;
+
+  &:hover {
+  background-color: #46c1ae;
+  }
 }
 .sub-menu__item:hover {
-  transform: scaleY(1.04);
+  transform: translate(0, -5px);
   background-color: #59d5bc;
-  margin-top: -2px;
-  margin-bottom: 2px;
-  /*transition: transform 0.3s ease-in;*/
 }
-.sub-menu__item-link:hover {
-  transform: translateY(-5px);
-}
-.sub-menu__item:nth-child(2n):hover {
-  transform: scaleY(1.04);
-  background-color: #46c1ae;
-}
-.sub-menu__item-link:nth-child(2n):hover {
-  transform: translateY(-5px);
-}
+
 .sub-menu__item-link:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: $tablet-width)  {
+  .sub-menu {
+    @mixin content-container;
+    flex-direction: row;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .sub-menu__item {
+    width: 50%
+  }
+  .sub-menu__item-link {
+    padding-right: 140px;
+    padding-left: 37px;
+    padding-top: 27px;
+    padding-bottom: 35px;
+  }
+  .sub-menu__item-link--interior::after {
+    background-position: 19px 5px;
+  }
+  .sub-menu__item-link--toy::after {
+    background-position: 2px 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sub-menu__item-link {
+    padding-right: 350px;;
+    padding-left: 37px;
+    padding-top: 27px;
+    padding-bottom: 35px;
+  }
+  .sub-menu__item-link--interior::after {
+    background-position: 19px 5px;
+  }
+  .sub-menu__item-link--toy::after {
+    background-position: 2px 5px;
+  }
 }

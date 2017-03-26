@@ -1,0 +1,36 @@
+.videoplayer {
+  position: relative;
+}
+.videoplayer__btn {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: none;
+}
+.videoplayer__btn img {
+  width: 102px;
+  height: 78px;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+  &:active,
+  &:focus {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+}
+@media (min-width: $tablet-width)  {
+  .videoplayer video[poster] {
+    width: 668px;
+    height: 455px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .videoplayer video[poster] {
+    width: 682px;
+    height: 455px;
+  }
+}

@@ -5,12 +5,69 @@
   align-items: stretch;
   background-color: #fff;
   color: #000;
+  /*margin: 0 auto;*/
+}
+@define-mixin container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width)  {
+    width: 768px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+  }
+}
+
+@define-mixin content-container {
+  box-sizing: content-box;
+  width: 260px;
+  margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
-  /*font-family: $font;*/
+
+  @media (min-width: $tablet-width)  {
+    box-sizing: content-box;
+    width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
 }
 @define-mixin reset-list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+@define-mixin hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0,0,0,0);
+  overflow: hidden;
+}
+@define-mixin tablet-header {
+  font-size: 43px;
+  line-height: 1.16;
+}
+@define-mixin desktop-header {
+  font-size: 53px;
+  line-height: 1.075;
+}
+@define-mixin padding-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@define-mixin padding-lr-30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@define-mixin padding-lr-50 {
+  padding-left: 50px;
+  padding-right: 50px;
 }

@@ -1,26 +1,48 @@
 .logo {
+  @mixin container;
   min-height: 80px;
   border-bottom: 1px solid $bd-color;
   display: flex;
   justify-content: center;
-  /*align-items: center;*/
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #fff;
+}
+.logo img {
+  width: 86px;
+  height: 36px;
 }
 .logo__link {
-  position: relative;
+  padding-top: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 14px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
-.logo__link::after {
-  content: "";
-  position: absolute;
-  width: 86px;
-  height: 35px;
-  top: 50%;
-  left: 0;
-  transform: translate(-50%, -50%);
-  background-image: url("../img/logo-mobile.svg");
+
+@media (min-width: $tablet-width)  {
+  .logo {
+    width: 150px;
+    justify-content: flex-start;
+    margin: 0;
+    padding-left: 30px;
+
+  }
+  .logo__link {
+    height: 100%;
+        /*padding-right: 50px;*/
+  }
 }
-.logo__link:hover::after {
-  opacity: 0.6;
-}
-.logo__link:active::after {
-  opacity: 0.3;
+
+@media (min-width: $desktop-width) {
+  .logo {
+    order: 2;
+    padding-left: 0;
+  }
 }

@@ -1,7 +1,9 @@
 .modal-window {
   display: none;
   position: fixed;
+  left: 50%;
   top: 25vh;
+  transform: translate(-50%, 0);
   z-index: 10;
   flex-direction: column;
   justify-content: flex-start;
@@ -27,6 +29,7 @@
   color: #000;
   font-weight: bold;
   text-align: center;
+  text-transform: uppercase;
 }
 .modal-window__desc {
   font-family: inherit;
@@ -38,6 +41,9 @@
   align-self: center;
 }
 .modal-window__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 100%;
 }
 .modal-window__btn {
@@ -71,4 +77,25 @@
 }
 .modal-window__option:checked + .modal-window__label {
   border: 2px solid $green-light;
+}
+@media (min-width: $tablet-width)  {
+  .modal-window {
+    width: 566px;
+  }
+  .modal-window__header {
+    font-size: 30px;
+    line-height: 1.7;
+  }
+  .modal-window__form {
+    padding-left: 78px;
+    padding-right: 78px;
+  }
+  .modal-window__label {
+    width: 112px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .modal-window {
+    width: 566px;
+  }
 }
