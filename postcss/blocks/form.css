@@ -26,7 +26,6 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: stretch;
-  /*display: block;*/
   padding-top: 31px;
   padding-bottom: 38px;
 }
@@ -40,7 +39,6 @@
   font-size: 17px;
   line-height: 1;
   color: $green-light;
-  /*background-color: inherit;*/
   background-color: #fff;
   text-transform: uppercase;
   font-weight: bold;
@@ -48,10 +46,8 @@
 }
 .form__option {
   display: none;
-  /*background-color: inherit;*/
 }
 .form__option-label {
-  /*display: block;*/
   width: 100%;
   font-family: inherit;
   font-size: 17px;
@@ -368,7 +364,6 @@
     top: 11px;
     right: 70px;
   }
-
   .form__text-group {
     padding-left: 218px;
   }
@@ -378,8 +373,6 @@
     flex-grow: 0;
     margin-top: 7px;
   }
-
-
   .form__notification {
     font-size: 17px;
     line-height: 1.765;
@@ -408,7 +401,6 @@
   }
   .form__option-label--checkbox {
     width: 252px;
-    /*margin-right: 12px;*/
   }
   .form__option-label--checkbox:nth-of-type(4) {
     margin-bottom: 0;
