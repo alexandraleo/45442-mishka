@@ -206,7 +206,7 @@
 }
 .form__textarea {
   font-family: inherit;
-  width: 260px;
+  width: 100%;
   height: 142px;
   font-size: 17px;
   line-height: 1.1;
@@ -216,7 +216,8 @@
   margin-top: 2px;
   padding: 15px;
   margin-bottom: 0;
-  white-space: normal;
+  /*white-space: normal;*/
+  resize: vertical;
 
   &:hover {
     border: 2px solid #62d1ba;
@@ -372,7 +373,7 @@
     padding-left: 218px;
   }
   .form__textarea {
-    width: 500px;
+    /*width: 500px;*/
     height: 142px;
     flex-grow: 0;
     margin-top: 7px;
@@ -425,14 +426,14 @@
   .form__phone-group,
   .form__mail-group,
   .form__text-group {
-    padding-left: 226px;
+    padding-left: 225px;
   }
   .form__text-group {
     padding-right: 225px;
   }
-  .form__textarea {
+  /*.form__textarea {
     width: 700px;
-  }
+  }*/
   .form__btn {
     align-self: flex-start;
     width: 230px;

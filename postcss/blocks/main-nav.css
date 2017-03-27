@@ -76,19 +76,18 @@
 }
 .main-nav__btn {
   position: absolute;
-  width: 21px;
-  height: 20px;
-  top: 40px;
-  right: 30px;
-  transform: translate(0, -50%);
+  width: 79px;
+  height: 79px;
+  top: 0;
+  right: 0;
   background-color: #fff;
   border: none;
 
   &--open {
-    background: #fff url("../img/icon-menu-open.svg") 0 2px no-repeat;
+    background: #fff url("../img/icon-menu-open.svg") 50% 50% no-repeat;
   }
   &--close {
-    background: #fff url("../img/icon-menu-close.svg") 0 0 no-repeat;
+    background: #fff url("../img/icon-menu-close.svg") 50% 50% no-repeat;
   }
 }
 .main-nav__offer {
