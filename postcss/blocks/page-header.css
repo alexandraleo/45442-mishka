@@ -1,21 +1,27 @@
 .page-header {
   font-family: inherit;
   background-color: $body-bg;
-  @mixin container;
+  /*@mixin container;*/
   background-color: #f9f9f9;
-  /*padding-top: -5px;*/
+}
+.page-header__nav {
+  width: 100%;
+}
+.page-header__sub-menu {
+  margin: 0 auto;
 }
 .page-header__title {
-  width: 100%;
-  margin: 0;
+  /*width: 100%;*/
+  @mixin inner;
+  /*margin: 0;*/
   font-size: 27px;
   line-height: 1.12;
   font-weight: bold;
   background-color: $grey;
   padding-top: 69px;
   padding-bottom: 75px;
-  padding-left: 30px;
-  padding-right: 30px;
+  /*padding-left: 30px;
+  padding-right: 30px;*/
   text-align: center;
 
   &--main {
@@ -29,19 +35,15 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .main-nav__items-links {
-    margin-left: auto;
-  }
   .page-header__title {
     @mixin tablet-header;
     padding-top: 34px;
-    /*padding-right: 5px;*/
-    padding-left: 40px;
+    /*padding-left: 40px;*/
 
     &--main {
       padding-top: 92px;
-      padding-left: 10px;
-      padding-right: 2px;
+      /*padding-left: 10px;
+      padding-right: 2px;*/
       padding-bottom: 375px;
       background-color: $bg-grey;
       background-size: cover;

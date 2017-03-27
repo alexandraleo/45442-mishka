@@ -1,7 +1,7 @@
 .logo {
-  @mixin container;
   min-height: 80px;
-  border-bottom: 1px solid $bd-color;
+  width: 160px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -11,12 +11,10 @@
 .logo img {
   width: 86px;
   height: 36px;
+  transform: translate(0, 60%);
 }
 .logo__link {
-  padding-top: 18px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 14px;
+  height: 100%;
 
   &:hover {
     opacity: 0.6;
@@ -28,15 +26,18 @@
 
 @media (min-width: $tablet-width)  {
   .logo {
-    width: 150px;
+    width: 200px;
     justify-content: flex-start;
     margin: 0;
-    padding-left: 30px;
-
+  }
+  .logo img {
+    width: 112px;
+    height: 46px;
+    transform: translate(0, 47%);
   }
   .logo__link {
-    height: 100%;
-        /*padding-right: 50px;*/
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -44,5 +45,10 @@
   .logo {
     order: 2;
     padding-left: 0;
+  }
+  .logo img {
+    width: 148px;
+    height: 73px;
+    transform: translate(0, 0);
   }
 }

@@ -13,7 +13,11 @@
     <nav class="main-nav  page-header__nav">
       <div class="logo">
         <a href="index.html" class="logo__link" aria-label="Перейти на главную страницу">
-          <img src="img/logo-mobile.svg" width="86" height="36" alt="На главную">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" width="86" height="36" alt="На главную">
+          </picture>
         </a>
       </div>
       <button class="main-nav__btn main-nav__btn--open" type="button" aria-label="Меню"></button>

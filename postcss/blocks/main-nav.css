@@ -1,4 +1,5 @@
 .main-nav {
+
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -25,6 +26,9 @@
     z-index: 10;
   }
 }
+.main-nav__item {
+
+}
 .main-nav__items-links {
   top: 80px;
   left: 0;
@@ -32,6 +36,9 @@
 .main-nav__user-links {
   top: 238px;
   left: 0;
+}
+.main-nav__user-links .main-nav__item:last-child {
+  border-bottom: 1px solid #ececec;
 }
 .main-nav--no-js{
   display: flex;
@@ -42,21 +49,23 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border-bottom: 1px solid #ececec;
+  border-top: 1px solid $bd-color;
 }
 .main-nav__item-icon {
   display: inline-flex;
 }
 .main-nav__link {
-  width: 100%;
+    /*@mixin inner;*/
+  width: 260px;
+  margin: 0 auto;
   position: relative;
   display: block;
   text-decoration: none;
   color: inherit;
-  padding-left: 75px;
+  padding-left: 45px;
   padding-top: 27px;
   padding-bottom: 28px;
-  padding-right: 30px;
+  /*padding-right: 30px;*/
 
   &:hover {
     color: rgba(0, 0, 0, 0.6);
@@ -66,10 +75,11 @@
   }
 }
 .main-nav__user-links .main-nav__link {
-  padding-left: 33px;
+  padding-left: 3px;
 }
 .main-nav__user-links .main-nav__link-text {
-  padding-left: 20px;
+  margin-left: 20px;
+  padding-right: 0;
 }
 .main-nav__item-icon {
   vertical-align: middle;
@@ -123,6 +133,9 @@
     border-bottom: 1px solid #ececec;
     padding-right: 50px;
   }
+  .main-nav__user-links .main-nav__item:last-child {
+    border-bottom: none;
+  }
   .main-nav__user-links .main-nav__cart-link {
     padding-right: 0;
     padding-left: 33px;
@@ -133,12 +146,9 @@
   .main-nav__items-links {
     order: 2;
     background-color: #f9f9f9;
-    padding-left: 0;
     flex-grow: 1;
-    padding-left: 50px;
   }
   .main-nav__items-links .main-nav__item {
-    padding-left: 0;
     border: none;
   }
   .main-nav__items-links .main-nav__link {
@@ -147,8 +157,14 @@
     padding-left: 0;
     padding-top: 17px;
     padding-bottom: 20px;
-    padding-right: 37px;
+    padding-right: 17px;
   }
+    .main-nav__items-links .main-nav__item:first-child .main-nav__link {
+      padding-left: 50px;
+  }
+  .main-nav__items-links .main-nav__item:last-child .main-nav__link {
+    padding-left: 20px;
+}
   .main-nav__items-list {
     width: auto;
   }
