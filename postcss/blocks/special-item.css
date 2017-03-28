@@ -1,8 +1,9 @@
 .special-item {
   @mixin block;
   @mixin padding-20;
+  @mixin inner;
   /*@mixin content-container;*/
-  @mixin padding-lr-30;
+  /*@mixin padding-lr-30;*/
 }
 .special-item__title {
   font-size: 25px;
@@ -21,10 +22,14 @@
   text-transform: uppercase;
 }
 .special-item__wrap {
-  display: flex;
+  /*display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: stretch;
+  align-items: stretch;*/
+  display: block;
+}
+.special-item__price-wrap {
+  display: block;
 }
 .special-item__intro {
   font-family: inherit;
@@ -58,7 +63,8 @@
 }
 .special-item__price {
   display: block;
-  align-self: center;
+  width: 100%;
+  text-align: center;
   margin-top: 24px;
   margin-bottom: 27px;
   font-family: inherit;
@@ -69,13 +75,21 @@
 }
 @media (min-width: $tablet-width)  {
   .special-item {
-    @mixin padding-lr-50;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
   .special-item__header {
     display: flex;
-    /*flex-grow: 1;*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;*/
+    flex-grow: 1;
     width: 100%;
-    justify-content: space-between;
+
   }
   .special-item__title {
     margin-top: 9px;
@@ -91,19 +105,25 @@
     text-align: center;
   }
   .special-item__wrap {
-    position: relative;
     width: 290px;
+    margin-bottom: 138px;
     margin-right: auto;
   }
-  .special-item__wrap img {
+  .special-item__price-wrap {
+    width: 290px;
+    height: 138px;
+    margin-top: -138px;
+  }
+
+  /*.special-item__wrap img {
     position: absolute;
     top: 45px;
     left: 335px;
     width: 333px;
     height: 404px;
-  }
+  }*/
   .special-item__intro {
-    margin-top: 25px;
+    margin-top: 0;
     margin-bottom: 10px;
     padding-top: 10px;
     padding-bottom: 19px;
@@ -154,13 +174,13 @@
   .special-item__wrap {
     margin-left: 175px;
   }
-  .special-item__wrap img {
+  /*.special-item__wrap img {
     top: -137px;
     left: 350px;
     width: 525px;
     height: 636px;
     z-index: -1;
-  }
+  }*/
   .special-item__info {
     margin-top: 29px;
     margin-bottom: 70px;

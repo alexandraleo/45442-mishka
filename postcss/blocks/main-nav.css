@@ -1,5 +1,5 @@
 .main-nav {
-
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -26,15 +26,13 @@
     z-index: 10;
   }
 }
-.main-nav__item {
 
-}
 .main-nav__items-links {
-  top: 80px;
+  top: 78px;
   left: 0;
 }
 .main-nav__user-links {
-  top: 238px;
+  top: 236px;
   left: 0;
 }
 .main-nav__user-links .main-nav__item:last-child {
@@ -85,11 +83,12 @@
   vertical-align: middle;
 }
 .main-nav__btn {
-  position: absolute;
+  /*position: absolute;
+  top: 0;
+  right: 0;*/
   width: 79px;
   height: 79px;
-  top: 0;
-  right: 0;
+/*margin-right: -30px;*/
   background-color: #fff;
   border: none;
 

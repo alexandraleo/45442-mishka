@@ -1,12 +1,12 @@
 .logo {
-  min-height: 80px;
+  height: 80px;
   width: 160px;
-  margin: 0 auto;
+  margin-left: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #fff;
+  background-color: transparent;
 }
 .logo img {
   width: 86px;

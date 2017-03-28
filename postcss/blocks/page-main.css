@@ -1,5 +1,5 @@
 .page-main {
-  @mixin container;
+  /*@mixin container;*/
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
