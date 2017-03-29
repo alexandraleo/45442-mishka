@@ -1,5 +1,5 @@
 .video-review {
-  @mixin padding-lr-30;
+  /*@mixin padding-lr-30;*/
   background-color: #fff;
   color: #000;
   font-family: inherit;

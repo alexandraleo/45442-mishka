@@ -1,14 +1,12 @@
 .separator {
-  /*@mixin container;*/
+  height: 7px;
   width: 100%;
-  /*border-bottom: 7px solid $grey;*/
+  background: transparent url("../img/bg-zigzag-line.svg") 0 0 repeat-x;
+  background-size: contain;
 }
 @media (min-width: $tablet-width)  {
   .separator {
     height: 17px;
-    width: 100%;
-    background: transparent url("../img/bg-zigzag-line.svg") 0 0 repeat-x;
-    background-size: contain;
   }
 }
 @media (min-width: $desktop-width) {
