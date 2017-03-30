@@ -1,5 +1,4 @@
 .page-main {
-  /*@mixin container;*/
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -24,13 +23,20 @@
   margin-bottom: 36px;
 }
 .page-main__special {
+  @mixin inner;
   margin-top: 8px;
   margin-bottom: 15px;
 }
 .page-main__advantages {
+  @mixin inner;
   margin-top: 7px;
 }
+.page-main__reviews {
+  @mixin inner;
+  margin-bottom: 22px;
+}
 .page-main__contacts {
+  @mixin inner;
   margin-top: 12px;
   margin-bottom: 20px;
 }
@@ -45,15 +51,16 @@
 @media (min-width: $tablet-width)  {
   .page-main__special {
     margin-top: 18px;
-    margin-bottom: 32px;
+    margin-bottom: 29px;
   }
   .page-main__advantages {
     margin-top: 19px;
     margin-bottom: 10px;
   }
   .page-main__reviews {
-    margin-top: 25px;
-    margin-bottom: 42px;
+    @mixin inner;
+    margin-top: 12px;
+    margin-bottom: 66px;
   }
   .page-main__contacts {
     margin-top: 12px;

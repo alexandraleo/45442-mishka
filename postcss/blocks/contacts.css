@@ -1,7 +1,6 @@
 .contacts {
   @mixin block;
   /*@mixin padding-lr-30;*/
-  @mixin inner;
   @mixin padding-20;
 }
 .contacts__header {
@@ -92,16 +91,14 @@
     margin-bottom: 51px;
   }
   .contacts__map::before {
-    top: 36.5%;
+    top: 35.5%;
     left: 45.5%;
   }
   .contacts__btn {
+    box-sizing: border-box;
     width: 230px;
     align-self: center;
   }
-  /*.contacts {
-    margin-bottom: 18px;
-  }*/
 }
 @media (min-width: $desktop-width) {
   .contacts {

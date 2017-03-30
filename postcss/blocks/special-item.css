@@ -1,7 +1,6 @@
 .special-item {
   @mixin block;
   @mixin padding-20;
-  @mixin inner;
   /*@mixin content-container;*/
   /*@mixin padding-lr-30;*/
 }
@@ -40,7 +39,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
   margin-top: 18px;
-  margin-bottom: 5px;
+  margin-bottom: 11px;
 }
 .special-item__info {
   width: 100%;
@@ -65,7 +64,7 @@
   display: block;
   width: 100%;
   text-align: center;
-  margin-top: 24px;
+  margin-top: 20px;
   margin-bottom: 27px;
   font-family: inherit;
   font-size: 17px;
@@ -86,10 +85,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: stretch;*/
+    align-items: stretch;
     flex-grow: 1;
     width: 100%;
-
+    margin-bottom: 42px;
   }
   .special-item__title {
     margin-top: 9px;
@@ -101,6 +100,7 @@
     line-height: 1;
     width: 130px;
     padding-top: 20px;
+    margin-left: auto;
     margin-right: -2px;
     text-align: center;
   }
@@ -123,8 +123,8 @@
     height: 404px;
   }*/
   .special-item__intro {
-    margin-top: 0;
-    margin-bottom: 10px;
+    margin-top: -7px;
+    margin-bottom: 17px;
     padding-top: 0;
     padding-bottom: 19px;
     font-size: 17px;
@@ -136,9 +136,9 @@
   .special-item__price {
     font-size: 20px;
     line-height: 1.2;
-    margin-top: 28px;
+    margin-top: 24px;
     margin-bottom: 34px;
-    padding-left: 5px;
+    padding-left: 2px;
   }
 }
 

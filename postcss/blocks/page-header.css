@@ -60,6 +60,7 @@
   .page-header {
     flex-direction: row;
     flex-wrap: wrap;
+
   }
   .page-header__inner {
     width: 668px;
@@ -75,7 +76,8 @@
       padding-right: 2px;*/
       padding-bottom: 375px;
       background-color: $bg-grey;
-      background-size: cover;
+      background-size: 173%;
+      background-position: 50% -64px
     }
   }
 }
@@ -86,7 +88,7 @@
   .page-header__title {
     @mixin desktop-header;
     padding-top: 33px;
-    padding-left: 34px;
+    /*padding-left: 34px;*/
     padding-bottom: 85px;
 
     &--main {
