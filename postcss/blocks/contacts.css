@@ -134,6 +134,7 @@
   }
   .contacts__btn {
     order: 4;
-    margin-right: 40px;
+    /*margin-right: 40px;*/
+    margin-left: 55px;
   }
 }

@@ -77,7 +77,7 @@
       padding-bottom: 375px;
       background-color: $bg-grey;
       background-size: 173%;
-      background-position: 50% -64px
+      background-position: 50% -64px;
     }
   }
 }
@@ -93,9 +93,10 @@
 
     &--main {
       padding-top: 92px;
-      padding-bottom: 359px;
+      padding-bottom: 360px;
       background-color: $bg-grey;
-      background-size: cover;
+      background-size: 110%;
+      background-position: 50% -65px;
     }
   }
   }

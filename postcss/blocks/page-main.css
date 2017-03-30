@@ -89,20 +89,21 @@
 
 @media (min-width: $desktop-width) {
   .page-main__special {
+    margin-top: 13px;
     z-index: 0;
-    margin-bottom: 55px
+    margin-bottom: 49px
   }
   .page-main__advantages {
     margin-top: 9px;
     margin-bottom: 5px;
   }
   .page-main__reviews {
-    margin-top: 30px;
-    margin-bottom: 45px;
+    margin-top: 22px;
+    margin-bottom: 67px;
   }
   .page-main__contacts {
     margin-top: 3px;
-    margin-bottom: 81px;
+    margin-bottom: 40px;
   }
   .page-main__catalog {
     margin-top: 127px;

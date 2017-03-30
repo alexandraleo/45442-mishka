@@ -50,7 +50,7 @@
 }
 @media (min-width: $desktop-width) {
   .slider__toggles {
-    bottom: 118px;
-    right: 55px;
+    bottom: 97px;
+    right: 4px;
   }
 }

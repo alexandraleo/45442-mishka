@@ -44,7 +44,6 @@
         background-image: url("../img/review@2x.jpg");
       }
   }
-                    /*Поправить*/
   .reviews__header {
     @mixin tablet-header;
     margin-top: 67px;
@@ -65,10 +64,7 @@
   }
   .reviews__header {
     @mixin desktop-header;
-    margin-top: 67px;
+    margin-top: 62px;
     margin-left: 172px;
-  }
-  .reviews__btn {
-    top: 45px;
   }
 }
