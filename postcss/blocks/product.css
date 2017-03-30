@@ -84,15 +84,17 @@
 @media (min-width: $tablet-width)  {
   .product {
     flex-direction: row;
+    align-items: stretch;
     padding-top: 0;
     padding-bottom: 0;
   }
-  .product__item-image,
-  .product img {
+  .product__item-image {
     width: 334px;
-    height: 334px;
+    height: auto;
+    margin-bottom: -5px;
   }
   .product__item-info {
+    box-sizing: border-box;
     width: 100%;
     justify-content: space-between;
     padding-bottom: 30px;
@@ -129,6 +131,7 @@
     justify-content: space-between;
     max-width: 316px;
     flex-grow: 1;
+    padding-top: 30px;
     padding-bottom: 27px;
   }
   .product__item-image,

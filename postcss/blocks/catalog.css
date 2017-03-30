@@ -1,7 +1,7 @@
 .catalog {
   @mixin block;
   @mixin padding-20;
-  @mixin padding-lr-30;
+  /*@mixin padding-lr-30;*/
 }
 .catalog__items {
   display: flex;
@@ -19,9 +19,9 @@
   margin-bottom: 0;
 }
 @media (min-width: $tablet-width)  {
-  .catalog {
+  /*.catalog {
     @mixin padding-lr-50;
-  }
+  }*/
   .catalog__item {
     margin-bottom: 52px;
   }
@@ -37,6 +37,7 @@
   }
 
   .catalog__item {
+    width: 316px;
     justify-content: space-between;
     margin-bottom: 0;
   }

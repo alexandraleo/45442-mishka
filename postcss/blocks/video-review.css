@@ -1,8 +1,16 @@
 .video-review {
+
   /*@mixin padding-lr-30;*/
   background-color: #fff;
   color: #000;
   font-family: inherit;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .video-review__wrap {
@@ -14,26 +22,23 @@
   border: 1px solid $bd-color;
 }
 
-.video-review__header-wrap {
+/*.video-review__header-wrap {
   display: flex;
   justify-content: flex-start;
   padding-left: 32px;
   padding-right: 34px;
   margin-top: 3px;
   margin-bottom: 26px;
-}
+}*/
 .video-review__header {
   font-size: 17px;
   line-height: 1.4;
   font-weight: bold;
   color: #000;
-  margin: 0;
-  margin-left: 22px;
-}
-.video-review__header-icon--icon-video {
-  flex-shrink: 0;
-  margin-top: 6px;
-  margin-left: 4px;
+  padding-left: 90px;
+  margin-top: 2px;
+  margin-bottom: 27px;
+  background: transparent url("../img/icon-video.svg") 33px 7px no-repeat;
 }
 .video-review__desc-wrap {
   display: flex;
@@ -42,7 +47,7 @@
   align-items: stretch;
   padding-left: 34px;
   padding-right: 34px;
-  padding-top: 22px;
+  padding-top: 27px;
   padding-bottom: 25px;
   margin-bottom: 0;
 }
@@ -59,9 +64,9 @@
   margin-bottom: 7px;
 }
 @media (min-width: $tablet-width)  {
-  .video-review {
+  /*.video-review {
     @mixin padding-lr-50;
-  }
+  }*/
   .video-review__wrap {
     padding-top: 0;
   }
@@ -72,30 +77,26 @@
     /*outline: 1px solid red;*/
   }
   .video-review__header {
+    order: 2;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 4px;
+    padding-left: 106px;
     font-size: 20px;
     line-height: 1.2;
+    background-position: 42px -5px;
   }
   .video-review__desc {
     font-size: 15px;
     line-height: 2;
     margin-bottom: 10px;
   }
-  .video-review__header-wrap {
-    order: 2;
-    width: 100%;
-    margin-top: 34px;
-    margin-bottom: 8px;
-    padding-left: 38px;
-  }
-  .video-review__header {
-    margin-top: 5px;
-    margin-left: 31px;
-  }
   .video-review__header-icon--icon-video {
     margin-top: 0;
   }
   .video-review__btn {
-    width: 100%;
+    box-sizing: border-box;
+    width: 584px;
     margin-top: 24px;
     margin-bottom: 20px;
   }
@@ -118,29 +119,25 @@
   .video-review__video {
     order: 2;
     width: 682px;
-    margin-top: -175px;
+    margin-top: -176px;
     /*outline: 1px solid blue;*/
     /*margin-right: 18px;*/
     /*margin-right: 20px;*/
     /*margin-left: -970px;*/
     /*margin-right: 78px;*/
   }
-  .video-review__header-wrap {
+  .video-review__header {
     box-sizing: border-box;
     padding-left: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 760px;
-    /*width: 350px;*/
-    margin-top: 41px;
-    /*padding-left: 58px;*/
+    margin-top: 42px;
     padding-right: 100px;
     margin-bottom: 32px;
-  }
-  .video-review__header {
-    margin-left: 0px;
-    margin-top: 22px;
+    padding-top: 54px;
+    background-position: 2px 0;
   }
   .video-review__desc-wrap {
     box-sizing: border-box;
