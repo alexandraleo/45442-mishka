@@ -13,11 +13,8 @@
   font-size: 13px;
   line-height: 1.85;
   color: $txt-color;
-  /*@mixin padding-lr-30;*/
   margin-top: 24px;
   margin-bottom: 12px;
-  /*padding-top: 5px;
-  padding-bottom: 5px;*/
 }
 .page-main__special {
   @mixin inner;
@@ -48,9 +45,9 @@
   margin-bottom: 57px;
 }
 .page-main__form {
-  @mixin inner;
+  /*@mixin inner;*/
   /*margin-top: 4px;*/
-  margin-bottom: 36px;
+  margin-bottom: 55px;
 }
 @media (min-width: $tablet-width)  {
   .page-main__special {
@@ -79,11 +76,9 @@
     margin-bottom: 63px;
   }
   .page-main__desc {
-    /*@mixin padding-lr-50;*/
     font-size: 17px;
     line-height: 1.765;
     margin-top: 78px;
-    /*margin-bottom: 30px;*/
   }
   .page-main__form {
     /*margin-top: 5px;*/
