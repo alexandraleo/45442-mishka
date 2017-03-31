@@ -1,7 +1,5 @@
 .page-header {
   font-family: inherit;
-  /*background-color: $body-bg;*/
-  /*@mixin container;*/
   background-color: $bg-grey;
   width: 100%;
 }
@@ -52,7 +50,7 @@
         }
 }
 @media (min-width: $tablet-width),
-      (min-width: $tablet-width) {
+      (min-width: $desktop-width) {
         .page-header__title--main {
           background-image: url("../img/hero-desktop@1x.jpg");
         }

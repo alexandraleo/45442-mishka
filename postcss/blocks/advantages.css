@@ -1,12 +1,9 @@
 .advantages {
   @mixin block;
-  /*@mixin content-container;*/
   @mixin padding-20;
-  /*@mixin padding-lr-30;*/
-  /*padding-top: 27px;
-  padding-bottom: 20px;*/
 }
 .advantages__header {
+  box-sizing: border-box;
   margin-top: 0;
   margin-bottom: 30px;
   font-size: 25px;

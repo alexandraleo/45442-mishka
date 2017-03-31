@@ -63,6 +63,10 @@
   color: rgba(70, 193, 174, 0.3);
   border-bottom: 1px solid rgba(70, 193, 174, 0.3);
 }
+.contacts__ya-map {
+  width: 320px;
+  height: 457px;
+}
 @media (min-width: $tablet-width)  {
   .contacts {
     /*@mixin padding-lr-50;*/
@@ -98,6 +102,10 @@
     box-sizing: border-box;
     width: 230px;
     align-self: center;
+  }
+  .contacts__ya-map {
+    width: 768px;
+    height: 457px;
   }
 }
 @media (min-width: $desktop-width) {
@@ -136,5 +144,9 @@
     order: 4;
     /*margin-right: 40px;*/
     margin-left: 55px;
+  }
+  .contacts__ya-map {
+    width: 525px;
+    height: 457px;
   }
 }

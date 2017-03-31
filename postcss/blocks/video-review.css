@@ -1,6 +1,4 @@
 .video-review {
-
-  /*@mixin padding-lr-30;*/
   background-color: #fff;
   color: #000;
   font-family: inherit;
@@ -21,16 +19,8 @@
   align-items: stretch;
   border: 1px solid $bd-color;
 }
-
-/*.video-review__header-wrap {
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 32px;
-  padding-right: 34px;
-  margin-top: 3px;
-  margin-bottom: 26px;
-}*/
 .video-review__header {
+  box-sizing: border-box;
   font-size: 17px;
   line-height: 1.4;
   font-weight: bold;
@@ -108,6 +98,7 @@
 }
 @media (min-width: $desktop-width) {
   .video-review__wrap {
+    /*min-height: 455px;*/
     flex-direction: row;
     /*flex-direction: column;*/
     flex-wrap: wrap;
@@ -152,7 +143,11 @@
     overflow-y: hidden;
   }
   .video-review__desc {
+    box-sizing: border-box;
+    width: 230px;
     margin-bottom: 47px;
+    flex-grow: 0;
+    flex-shrink: 1;
   }
 
   .video-review__btn {
