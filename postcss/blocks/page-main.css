@@ -7,15 +7,6 @@
   color: #000;
   font-family: inherit;
 }
-.page-main__desc {
-  @mixin inner;
-  font-family: inherit;
-  font-size: 13px;
-  line-height: 1.85;
-  color: $txt-color;
-  margin-top: 24px;
-  margin-bottom: 12px;
-}
 .page-main__special {
   @mixin inner;
   margin-top: 8px;
@@ -43,6 +34,16 @@
   @mixin inner;
   margin-top: 6px;
   margin-bottom: 57px;
+}
+.page-main__desc {
+  @mixin inner;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.85;
+  color: $txt-color;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
 }
 .page-main__form {
   /*@mixin inner;*/
@@ -79,10 +80,11 @@
     font-size: 17px;
     line-height: 1.765;
     margin-top: 78px;
+    margin-bottom: 5px;
   }
   .page-main__form {
     /*margin-top: 5px;*/
-    margin-bottom: 13px;
+    margin-bottom: 31px;
   }
 }
 
@@ -112,8 +114,12 @@
     margin-bottom: 103px;
   }
   .page-main__desc {
+    /*@mixin inner;*/
+    margin: 0 auto;
+    box-sizing: border-box;
     padding-left: 175px;
     padding-right: 175px;
-    margin-top: 140px;
+    margin-top: 115px;
+    margin-bottom: 3px;
   }
 }
