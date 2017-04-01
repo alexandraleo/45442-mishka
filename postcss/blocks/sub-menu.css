@@ -20,7 +20,7 @@
 .sub-menu__item-link {
   /*@mixin inner;*/
   width: 100%;
-  /*margin: 0 auto;*/
+  margin: 0 auto;
   position: relative;
   display: block;
   text-decoration: none;
@@ -79,8 +79,7 @@
 
 @media (min-width: $tablet-width)  {
   .sub-menu {
-    /*@mixin inner;*/
-    width: 668px;
+    @mixin inner;
     flex-direction: row;
     font-size: 20px;
     line-height: 1.5;

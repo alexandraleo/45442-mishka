@@ -1,18 +1,14 @@
 .page-header {
   font-family: inherit;
-  background-color: $bg-grey;
-  width: 100%;
+  background-color: $body-bg;
+  /*@mixin container;*/
+  background-color: #f9f9f9;
 }
-/*.page-header__inner {
-  width: 320px;
-  margin: 0 auto;
-}*/
 .page-header__nav {
   width: 100%;
 }
 .page-header__sub-menu {
   margin: 0 auto;
-  /*margin-left: -30px;*/
 }
 .page-header__title {
   /*width: 100%;*/
@@ -62,9 +58,6 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-  }
-  .page-header__inner {
-    width: 668px;
   }
   .page-header__title {
     @mixin tablet-header;
