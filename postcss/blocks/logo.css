@@ -1,7 +1,7 @@
 .logo {
   height: 80px;
   width: 160px;
-  margin: 0 auto;
+  margin-left: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -10,6 +10,7 @@
   background-color: #fff;
   flex-grow: 1;
   padding-left: 50px;
+
 }
 .logo img {
   width: 86px;
@@ -17,15 +18,11 @@
   transform: translate(0, 60%);
 }
 .logo__link {
-<<<<<<< HEAD
   display: block;
   /*width: 100%;*/
   height: 100%;
   padding-left: 20px;
   padding-right: 20px;
-=======
-  height: 100%;
->>>>>>> 90dfe65... Правки, inner, начало картинок
 
   &:hover {
     opacity: 0.6;
@@ -37,18 +34,12 @@
 
 @media (min-width: $tablet-width)  {
   .logo {
-<<<<<<< HEAD
     height: 88px;
     /*width: 200px;*/
     justify-content: flex-start;
     flex-grow: 0;
     /*margin-right: auto;*/
     padding-left: 0;
-=======
-    width: 200px;
-    justify-content: flex-start;
-    margin: 0;
->>>>>>> 90dfe65... Правки, inner, начало картинок
   }
   .logo img {
     width: 112px;
@@ -56,11 +47,7 @@
     transform: translate(0, 47%);
   }
   .logo__link {
-<<<<<<< HEAD
     padding-left: 0;
-=======
-    padding-left: 50px;
->>>>>>> 90dfe65... Правки, inner, начало картинок
     padding-right: 50px;
   }
 }

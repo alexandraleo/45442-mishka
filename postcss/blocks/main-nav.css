@@ -1,4 +1,5 @@
 .main-nav {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -33,9 +34,7 @@
     z-index: 10;
   }
 }
-.main-nav__item {
 
-}
 .main-nav__items-links {
   top: 78px;
   left: -30px;
@@ -101,7 +100,6 @@
   width: 79px;
   height: 79px;
   margin-right: -30px;
-  /*background-color: #fff;*/
   border: none;
 
   &--open {
