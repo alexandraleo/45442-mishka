@@ -1,7 +1,5 @@
 .page-header {
   font-family: inherit;
-  /*background-color: $body-bg;*/
-  /*@mixin container;*/
   background-color: $bg-grey;
   width: 100%;
 }

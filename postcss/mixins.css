@@ -5,28 +5,7 @@
   align-items: stretch;
   background-color: #fff;
   color: #000;
-}
-@define-mixin inner {
-  width: 260px;
-  margin: 0 auto;
-  @media (min-width: $tablet-width)  {
-    box-sizing: content-box;
-    width: 668px;
-  }
-  @media (min-width: $desktop-width) {
-    width: 1050px;
-  }
-}
-@define-mixin inner {
-  width: 260px;
-  margin: 0 auto;
-  @media (min-width: $tablet-width)  {
-    box-sizing: content-box;
-    width: 668px;
-  }
-  @media (min-width: $desktop-width) {
-    width: 1050px;
-  }
+  /*margin: 0 auto;*/
 }
 @define-mixin reset-list {
   margin: 0;
