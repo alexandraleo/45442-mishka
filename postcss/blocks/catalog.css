@@ -1,9 +1,10 @@
 .catalog {
   @mixin block;
   @mixin padding-20;
-  /*@mixin padding-lr-30;*/
+  box-sizing: border-box;
 }
 .catalog__items {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -19,9 +20,6 @@
   margin-bottom: 0;
 }
 @media (min-width: $tablet-width)  {
-  /*.catalog {
-    @mixin padding-lr-50;
-  }*/
   .catalog__item {
     margin-bottom: 52px;
   }

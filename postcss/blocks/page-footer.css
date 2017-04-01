@@ -1,5 +1,4 @@
 .page-footer {
-
   background-color: $grey;
   color: #000;
   font-family: inherit;
@@ -14,7 +13,7 @@
   flex-wrap: nowrap;
 }
 .page-footer__socials {
-  min-height: 80px;
+  height: 80px;
 }
 .page-footer__developer-link {
   display: flex;
@@ -22,7 +21,7 @@
   align-items: center;
   text-decoration: none;
   width: 100%;
-  min-height: 80px;
+  height: 80px;
   border-top: 1px solid $bd-color;
 }
 .page-footer__developer-text {
@@ -43,7 +42,7 @@
   .page-footer__inner {
     flex-direction: row;
     align-items: center;
-    min-height: 145px;
+    height: 145px;
     /*margin-top: 20px;*/
   }
   .page-footer__logo {

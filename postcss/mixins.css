@@ -5,20 +5,7 @@
   align-items: stretch;
   background-color: #fff;
   color: #000;
-  /*margin: 0 auto;*/
 }
-/*@define-mixin container {
-  width: 320px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width)  {
-    width: 768px;
-  }
-  @media (min-width: $desktop-width) {
-    width: 1150px;
-  }
-}*/
-
 @define-mixin inner {
   width: 260px;
   margin: 0 auto;
