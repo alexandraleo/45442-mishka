@@ -171,8 +171,13 @@
   }
   .main-nav__items-links {
     order: 2;
-    background-color: #f9f9f9;
-    flex-grow: 1;
+    /*background-color: #f9f9f9;*/
+    width: auto;
+    margin-right: auto;
+    margin-top: 3px;
+    /*flex-grow: 0;
+    flex-shrink: 1;*/
+    /*flex-grow: 1;*/
   }
   .main-nav__items-links .main-nav__item {
     border: none;

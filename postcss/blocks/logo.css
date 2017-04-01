@@ -1,7 +1,7 @@
 .logo {
   height: 80px;
-  width: 160px;
-  margin-left: auto;
+  /*width: 100%;*/
+  /*margin-left: auto;*/
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -10,7 +10,6 @@
   background-color: #fff;
   flex-grow: 1;
   padding-left: 50px;
-
 }
 .logo img {
   width: 86px;
@@ -71,6 +70,10 @@
   .logo img {
     width: 148px;
     height: 73px;
-    transform: translate(0, 0);
+    transform: translate(0, 10%);
+  }
+  .logo__link {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

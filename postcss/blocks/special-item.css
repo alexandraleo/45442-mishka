@@ -1,7 +1,6 @@
 .special-item {
   @mixin block;
   @mixin padding-20;
-  @mixin inner;
   /*@mixin content-container;*/
   /*@mixin padding-lr-30;*/
 }
@@ -124,8 +123,8 @@
     height: 404px;
   }*/
   .special-item__intro {
-    margin-top: 0;
-    margin-bottom: 10px;
+    margin-top: -7px;
+    margin-bottom: 17px;
     padding-top: 0;
     padding-bottom: 19px;
     font-size: 17px;
