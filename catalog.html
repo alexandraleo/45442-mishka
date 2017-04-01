@@ -9,10 +9,10 @@
 </head>
 
 <body class="page">
-  <header class="page-header">
+  <header class="page-header page-header--separator">
     <nav class="main-nav  page-header__nav">
       <div class="main-nav__inner">
-        <div class="logo">
+        <div class="logo logo--no-js">
           <a href="index.html" class="logo__link" aria-label="Перейти на главную страницу">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
@@ -21,8 +21,8 @@
             </picture>
           </a>
         </div>
-        <button class="main-nav__btn main-nav__btn--open" type="button" aria-label="Меню"></button>
-        <ul class="main-nav__items-list main-nav--no-js main-nav__items-links">
+        <button class="main-nav__btn main-nav__btn--open main-nav__btn--no-js" type="button" aria-label="Меню"></button>
+        <ul class="main-nav__items-list main-nav__items-list--no-js main-nav__items-links">
           <li class="main-nav__item">
             <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
           </li>
@@ -30,7 +30,7 @@
             <a href="order.html" class="main-nav__link">Вязание на&nbsp;заказ</a>
           </li>
         </ul>
-        <ul class="main-nav__items-list main-nav--no-js main-nav__user-links">
+        <ul class="main-nav__items-list main-nav__items-list--no-js main-nav__user-links">
           <li class="main-nav__item">
             <a href="#" class="main-nav__link main-nav__icon-link main-nav__search-link">
               <svg class="main-nav__item-icon main-nav__item-icon--icon-search" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
@@ -58,7 +58,6 @@
       </div>
     </nav>
     <h1 class="page-header__title">Каталог товаров</h1>
-    <div class="separator separator--header"></div>
   </header>
   <main class="page-main">
     <section class="page-main__catalog catalog">

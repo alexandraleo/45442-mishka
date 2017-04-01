@@ -5,9 +5,11 @@
 
   &:hover {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
   }
   &:active {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
   }
 }
 
@@ -29,6 +31,7 @@
   margin-top: 2px;
   margin-bottom: 27px;
   background: transparent url("../img/icon-video.svg") 33px 7px no-repeat;
+  overflow: hidden;
 }
 .video-review__desc-wrap {
   display: flex;
@@ -124,11 +127,13 @@
     flex-direction: column;
     align-items: flex-start;
     margin-left: 760px;
-    margin-top: 42px;
+    /*margin-top: 42px;*/
+    height: 145px;
+    margin-top: 0;
     padding-right: 100px;
-    margin-bottom: 32px;
-    padding-top: 54px;
-    background-position: 2px 0;
+    margin-bottom: 30px;
+    padding-top: 94px;
+    background-position: 2px 40px;
   }
   .video-review__desc-wrap {
     box-sizing: border-box;

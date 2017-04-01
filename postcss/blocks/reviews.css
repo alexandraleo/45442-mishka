@@ -1,6 +1,5 @@
 .reviews {
   @mixin block;
-  @mixin inner;
   padding-top: 8px;
   padding-bottom: 20px;
 }

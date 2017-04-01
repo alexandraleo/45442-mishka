@@ -1,8 +1,6 @@
 .special-item {
   @mixin block;
   @mixin padding-20;
-  /*@mixin content-container;*/
-  /*@mixin padding-lr-30;*/
 }
 .special-item__title {
   font-size: 25px;

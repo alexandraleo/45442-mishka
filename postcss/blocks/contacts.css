@@ -1,6 +1,5 @@
 .contacts {
   @mixin block;
-  @mixin inner;
   @mixin padding-20;
 }
 .contacts__header {
@@ -35,7 +34,7 @@
 .contacts__map {
   position: relative;
   align-self: center;
-  margin-bottom: 34px;
+  /*margin-bottom: 34px;*/
 }
 .contacts__map::before {
   content: "";
@@ -45,6 +44,10 @@
   width: 66px;
   height: 101px;
   background: transparent url("../img/icon-map-pin.svg") 0 0 no-repeat;
+}
+.contacts__ya-map--no-js {
+  display: none;
+  height: 0;
 }
 .contacts__mail {
   font-size: inherit;
@@ -64,8 +67,13 @@
   border-bottom: 1px solid rgba(70, 193, 174, 0.3);
 }
 .contacts__ya-map {
+  /*margin-left: -30px;*/
   width: 320px;
   height: 457px;
+}
+.contacts__btn {
+  box-sizing: border-box;
+  margin-top: 40px;
 }
 @media (min-width: $tablet-width)  {
   .contacts {
@@ -92,7 +100,7 @@
     width: 21%;
   }
   .contacts__map {
-    margin-bottom: 51px;
+    /*margin-bottom: 51px;*/
   }
   .contacts__map::before {
     top: 35.5%;
@@ -102,10 +110,13 @@
     box-sizing: border-box;
     width: 230px;
     align-self: center;
+    margin-top: 55px;
   }
   .contacts__ya-map {
     width: 768px;
     height: 457px;
+    overflow: hidden;
+    /*margin-left: -50px;*/
   }
 }
 @media (min-width: $desktop-width) {
@@ -142,8 +153,9 @@
   }
   .contacts__btn {
     order: 4;
-    /*margin-right: 40px;*/
+    /*margin-right: 750px;*/
     margin-left: 55px;
+    margin-top: 0;
   }
   .contacts__ya-map {
     width: 525px;

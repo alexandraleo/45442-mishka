@@ -11,6 +11,10 @@
   flex-grow: 1;
   padding-left: 50px;
 }
+.logo--no-js {
+  margin: 0 auto;
+  padding-left: 0;
+}
 .logo img {
   width: 86px;
   height: 36px;

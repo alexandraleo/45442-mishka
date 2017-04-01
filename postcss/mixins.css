@@ -6,8 +6,6 @@
   background-color: #fff;
   color: #000;
 }
-<<<<<<< HEAD
-=======
 @define-mixin inner {
   width: 260px;
   margin: 0 auto;
@@ -19,7 +17,6 @@
     width: 1050px;
   }
 }
->>>>>>> 49ae2be... Правки, гор.скролл
 @define-mixin reset-list {
   margin: 0;
   padding: 0;

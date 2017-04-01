@@ -23,11 +23,13 @@
 }
   .videoplayer:hover::before {
     transform: scale(1.2);
+    transition: transform 0.3s ease;
   }
   .videoplayer:active::before,
   .videoplayer:focus::before {
     transform: scale(0.8);
     opacity: 0.3;
+    transition: all 0.3s ease;
   }
 .videoplayer__btn {
   display: none;
