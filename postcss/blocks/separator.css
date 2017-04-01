@@ -1,15 +1,23 @@
 .separator {
-  /*@mixin container;*/
+  position: relative;
+}
+.separator::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 7px;
   width: 100%;
-  border-bottom: 7px solid $grey;
+  background: transparent url("../img/bg-zigzag-line.svg") 0 0 repeat-x;
+  background-size: contain;
 }
 @media (min-width: $tablet-width)  {
-  .separator {
-    border-bottom: 17px solid $grey;
+  .separator::after {
+    height: 17px;
   }
 }
 @media (min-width: $desktop-width) {
-  .separator {
-    border-bottom: 23px solid $grey;
+  .separator::after {
+    height: 23px;
   }
 }

@@ -39,8 +39,8 @@
   }
   .slider__toggles {
     position: absolute;
-    bottom: 72px;
-    right: 53px;
+    bottom: 50px;
+    right: 3px;
     width: 168px;
   }
   .slider__toggle::before {
@@ -50,7 +50,7 @@
 }
 @media (min-width: $desktop-width) {
   .slider__toggles {
-    bottom: 118px;
-    right: 55px;
+    bottom: 97px;
+    right: 4px;
   }
 }

@@ -1,3 +1,6 @@
+/*.review {
+  z-index: 3;
+}*/
 .review__blockquote {
   font-family: inherit;
   font-size: 15px;
