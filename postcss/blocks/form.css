@@ -267,6 +267,7 @@
   justify-content: flex-start;
 }
 .form__notification {
+  @mixin inner;
   display: block;
   font-size: 14px;
   line-height: 1.15;
@@ -276,8 +277,9 @@
   order: 1;
 }
 .form__btn {
+  @mixin inner;
   order: 2;
-  width: 100%;
+  /*width: 100%;*/
 }
 
 @media (min-width: $tablet-width)  {
@@ -506,6 +508,7 @@
   }
 }
 @media (min-width: $desktop-width) {
+<<<<<<< HEAD
   /*.form__form-group {
     padding-left: 60px;
   }*/

@@ -18,7 +18,7 @@
 }
 .page-header__title {
   /*width: 100%;*/
-
+  @mixin inner;
   font-size: 27px;
   line-height: 1.12;
   font-weight: bold;
