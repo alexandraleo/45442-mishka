@@ -1,6 +1,6 @@
 .contacts {
   @mixin block;
-  /*@mixin padding-lr-30;*/
+  @mixin inner;
   @mixin padding-20;
 }
 .contacts__header {

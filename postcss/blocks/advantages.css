@@ -1,6 +1,7 @@
 .advantages {
   @mixin block;
   @mixin padding-20;
+  @mixin inner;
 }
 .advantages__header {
   box-sizing: border-box;

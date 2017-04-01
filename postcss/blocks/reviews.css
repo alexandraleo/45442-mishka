@@ -1,5 +1,6 @@
 .reviews {
   @mixin block;
+  @mixin inner;
   padding-top: 8px;
   padding-bottom: 20px;
 }
@@ -13,9 +14,21 @@
 .reviews__btn {
   margin-top: 38px;
 }
-
+@media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+        .reviews {
+          background-image: url("../img/review@2x.jpg");
+        }
+}
 @media (min-width: $tablet-width)  {
+  @media (min-resolution: 144dpi),
+        (min-resolution: 1.5dppx) {
+          .reviews {
+            background-image: url("../img/review@2x.jpg");
+          }
+  }
   .reviews {
+<<<<<<< HEAD
     position: relative;
     flex-direction: row;
     flex-wrap: wrap;
@@ -38,6 +51,7 @@
         background-image: url("../img/review@2x.jpg");
       }
   }
+/*Поправить*/
   .reviews__header {
     @mixin tablet-header;
     margin-top: 67px;
