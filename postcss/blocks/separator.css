@@ -1,23 +1,23 @@
 .separator {
   position: relative;
 }
-.separator::after {
+.separator::before {
   content: "";
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   height: 7px;
   width: 100%;
-  background: transparent url("../img/bg-zigzag-line.svg") 0 0 repeat-x;
-  background-size: contain;
+  background: transparent url("../img/bg-zigzag-line.svg") 50% 0 repeat-x;
+  background-size: cover;
 }
 @media (min-width: $tablet-width)  {
-  .separator::after {
+  .separator::before {
     height: 17px;
   }
 }
 @media (min-width: $desktop-width) {
-  .separator::after {
+  .separator::before {
     height: 23px;
   }
 }

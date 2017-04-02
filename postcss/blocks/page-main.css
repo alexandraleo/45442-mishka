@@ -57,7 +57,7 @@
   }
   .page-main__advantages {
     margin-top: 20px;
-    margin-bottom: 11px;
+    margin-bottom: 23px;
   }
   .page-main__reviews {
     @mixin inner;
