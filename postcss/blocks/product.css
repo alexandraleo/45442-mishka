@@ -99,8 +99,10 @@
   .product__item-image {
     box-sizing: border-box;
     /*width: auto;*/
-    width: 50%;
-    height: auto;
+    width: 334px;
+    height: 334px;
+    /*width: 50%;
+    height: auto;*/
     /*margin-right: auto;*/
     margin-bottom: -5px;
   }

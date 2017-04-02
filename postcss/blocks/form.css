@@ -589,6 +589,8 @@
     width: 230px;
     margin-left: 175px;
     margin-top: -1px;
+    flex-shrink: 0;
+    flex-grow: 1;
   }
   .form__notification {
     margin-right: 175px;
