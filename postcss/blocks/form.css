@@ -216,6 +216,17 @@
   }
 }
 .form__contacts-icon {
+  color: rgba(0, 0, 0, 0.2);
+}
+/*.form__contacts-option:hover .form__contacts-icon {
+  color: rgba(99, 209, 187, 1);
+}*/
+.form__contacts-option:hover + .form__contacts-icon,
+.form__contacts-option:active + .form__contacts-icon,
+.form__contacts-option:focus + .form__contacts-icon {
+  color: rgba(99, 209, 187, 1);
+}
+.form__contacts-icon {
   position: absolute;
   transform: translate(0, 50%);
   pointer-events: none;
@@ -358,20 +369,16 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: flex-start;
-    /*flex-grow: 1;*/
-    flex-shrink: 1;
-    flex-grow: 0;
-    height: 204px;
     width: auto;
   }
   .form__option-label--checkbox {
-    width: 245px;
+    box-sizing: border-box;
+    width: 50%;
     /*width: auto;*/
     padding-left: 88px;
+    padding-right: 10px;
     padding-top: 15px;
     padding-bottom: 20px;
-    margin-left: 0;
-    margin-right: 4px;
     margin-bottom: 21px;
 
     &::before {
@@ -381,8 +388,12 @@
       height: 52px;
     }
   }
-  .form__option-label--checkbox:nth-last-of-type(odd) {
-    margin-right: 0;
+  .form__option-label--checkbox:nth-of-type(even) {
+    padding-left: 98px;
+
+    &::before {
+      left: 16px;
+    }
   }
   .form__option-label--checkbox:nth-of-type(5) {
     margin-bottom: 0;
@@ -404,11 +415,12 @@
   }
   .form__name-group {
     /*margin-top: -4px;*/
+    /*padding-top: 44px;*/
     margin-bottom: 0;
   }
   .form__name-group,
   .form__phone-group {
-    padding-top: 46px;
+    padding-top: 45px;
     margin-top: 0;
   }
   .form__name-group .form__group-wrap {
@@ -531,26 +543,25 @@
     margin-top: 0;
   }
   .form__checkbox-group .form__group-wrap {
-    height: 128px;
+    /*height: 128px;*/
     justify-content: flex-start;
   }
   .form__option-label--checkbox:nth-last-of-type(odd) {
-    margin-right: 10px;
+    margin-right: 7px;
   }
   .form__option-label--checkbox {
-    margin-right: 10px;
+    margin-right: 7px;
+    width: 29%;
   }
-  /*.form__option-label--checkbox:nth-last-of-type(n+1) {
-    margin-right: 0;
-  }*/
-  .form__option-label--checkbox {
-    margin-right: 10px;
+  .form__option-label--checkbox:nth-of-type(even) {
+    padding-left: 88px;
+
+    &::before {
+      left: 6px;
+    }
   }
-  /*.form__option-label--checkbox:nth-last-of-type(n+1) {
-    margin-right: 0;
-  }*/
-  .form__option-label--checkbox {
-    width: 252px;
+  .form__option-label--checkbox:nth-of-type(5) {
+    margin-bottom: 0;
   }
   .form__option-label--checkbox:nth-of-type(4) {
     margin-bottom: 0;
@@ -589,6 +600,8 @@
     width: 230px;
     margin-left: 175px;
     margin-top: -1px;
+    flex-shrink: 0;
+    flex-grow: 1;
   }
   .form__notification {
     margin-right: 175px;

@@ -71,28 +71,37 @@
   .advantages__header {
     width: 100%;
     @mixin tablet-header;
-    margin-top: 10px;
+    margin-top: 8px;
     margin-bottom: 15px;
   }
+
+  /*Про колонки*/
   .advantages__list {
     display: inline-block;
     columns: 2;
     margin-top: 30px;
     margin-right: 17px;
     padding-left: 2px;
-
-    /*&:last-child {
-      margin-right: 0;
-    }*/
   }
+  /*.advantages__list {
+    width: 668px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap-reverse;
+  }*/
+  /*.advantages__item {
+    width: 50%;
+  }*/
   .advantages__item {
-    /*display: inline-block;*/
+    box-sizing: border-box;
     font-size: 20px;
     line-height: 1.1;
     padding-top: 57px;
     margin-bottom: 25px;
 
-    &:last-child {
+    &:last-child,
+    &:nth-child(3) {
       margin-bottom: 0;
     }
   }
