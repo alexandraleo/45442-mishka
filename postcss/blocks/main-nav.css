@@ -85,7 +85,15 @@
 }
 .main-nav__item-icon {
   vertical-align: middle;
+  color: rgba(0, 0, 0, 0.2);
 }
+.main-nav__link:hover .main-nav__item-icon {
+  color: rgba(99, 209, 187, 1);
+}
+.main-nav__link:active .main-nav__item-icon {
+  color: rgba(99, 209, 187, 0.3);
+}
+
 .main-nav__btn {
 
   width: 79px;
@@ -146,7 +154,7 @@
     flex-grow: 1;
   }
   .main-nav__user-links .main-nav__item:first-child {
-    width: 86px;
+    width: 84px;
     text-align: center;
   }
   .main-nav__user-links .main-nav__item:last-child {
@@ -183,7 +191,10 @@
     padding-bottom: 20px;
     padding-right: 0;
   }
- .main-nav__search-link .main-nav__link-text{
+  .main-nav__search-link {
+    width: 100%;
+  }
+  .main-nav__search-link .main-nav__link-text{
     @mixin hidden;
   }
   .main-nav__offer {

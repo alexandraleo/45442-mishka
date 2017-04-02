@@ -72,7 +72,6 @@
   margin-top: 1px;
   margin-bottom: 19px;
 }
-
 .product__item-price {
   font-size: 15px;
   line-height: 1.6;
@@ -82,6 +81,15 @@
 .product__basket-btn {
   width: 20px;
   height: 18px;
+}
+.product__icon {
+  color: rgba(0, 0, 0, 0.2);
+}
+.product__basket-btn:hover .product__icon {
+  color: rgba(99, 209, 187, 1);
+}
+.product__basket-btn:active .product__icon {
+  color: rgba(99, 209, 187, 0.3);
 }
 
 @media (min-width: $tablet-width)  {

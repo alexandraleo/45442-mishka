@@ -9,7 +9,7 @@
   height: 7px;
   width: 100%;
   background: transparent url("../img/bg-zigzag-line.svg") 50% 0 repeat-x;
-  background-size: cover;
+  background-size: contain;
 }
 @media (min-width: $tablet-width)  {
   .separator::before {

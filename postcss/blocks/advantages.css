@@ -71,7 +71,7 @@
   .advantages__header {
     width: 100%;
     @mixin tablet-header;
-    margin-top: 10px;
+    margin-top: 8px;
     margin-bottom: 15px;
   }
 
