@@ -2,7 +2,7 @@
   position: relative;
   width: 260px;
   height: 150px;
-  background: transparent url("../img/video-mobile@1x.jpg") 0 0 no-repeat;
+  background: $bg-grey url("../img/video-mobile@1x.jpg") 0 0 no-repeat;
 }
 @media (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
