@@ -78,6 +78,7 @@
   /*Про колонки*/
   .advantages__list {
     display: inline-block;
+    vertical-align: top;
     columns: 2;
     margin-top: 30px;
     margin-right: 17px;

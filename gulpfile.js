@@ -59,7 +59,6 @@ gulp.task("build", function(fn) {
     "copy",
     "style",
     "images",
-    "icons",
     fn
   );
 });

@@ -65,16 +65,7 @@
   .logo img {
     width: 148px;
     height: 73px;
-    transform: translate(0, 10%);
-  }
-  .logo__link {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .logo img {
-    width: 148px;
-    height: 73px;
-    transform: translate(0, 10%);
+    transform: translate(2%, 10%);
   }
   .logo__link {
     padding-left: 10px;
